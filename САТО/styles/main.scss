@@ -1,0 +1,121 @@
+@import "null.scss";
+
+/*------Variable----*/
+
+$yell: #FFD369;
+
+/*------Mixins----*/
+
+@mixin fontChoose($f_s,$f_w,$l_h,$col){
+	font-family: "Raleway", sans-serif;
+	font-size: $f_s;
+	font-weight: $f_w;
+	line-height: $l_h;
+	color: $col;
+}
+
+/*------Container----*/
+
+.container{
+	margin: 0 auto;
+	max-width: 1600px/1920px *100%;
+}
+/*------Burger----*/
+
+.toggle-hamburger{
+	display: none;
+}
+
+/*------Section-top----*/
+
+.section-top{
+	z-index: 1;
+	background: url("../images/background.svg");
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	.section-top__title{
+		@include fontChoose(64px,700,75px,$yell);
+		margin-top: 60px;
+		@media (max-width: 1480px) {
+			font-size: 54px;
+		}
+		@media (max-width: 1235px) {
+			font-size: 44px;			
+		}
+		@media (max-width: 990px) {
+			font-size: 34px;
+		}
+	}
+	.section-top__subtitle{
+		@include fontChoose(48px,400,56.25px,#fff);
+		@media (max-width: 1480px) {
+			font-size: 38px;
+		}
+		@media (max-width: 1235px) {
+			font-size: 28px;		
+		}
+		@media (max-width: 990px) {
+			font-size: 18px;
+		}
+	}
+	.section-top__btn{
+		margin-top: 120px;
+		transition: 0.3s linear;
+		.btn{
+			@include fontChoose(32px,bold,37px,#222831);
+			padding: 20px 20px;
+			background: $yell;
+			border-radius: 3px;
+			@media (max-width: 1480px) {
+				font-size: 22px;
+				line-height: 27px;
+			}
+			@media (max-width: 990px) {
+				font-size: 18px;
+			}
+		}
+		&:hover{	
+			transform: translateY(5px);
+		}
+		&:hover .btn{
+			color: $yell;
+			background-color: rgba(26, 46, 61,.8);
+		}
+	}
+}
+
+/*------Header----*/
+@import "header.scss";
+
+/*------Burger----*/
+@import "burger.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
