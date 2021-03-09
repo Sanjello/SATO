@@ -57,6 +57,8 @@ $button-transistion-duration: 0.3s;  // The transition duration
 		  /* --- animate to X --- */
 		&.toggle-burger__animx{
 		    span{
+
+		    	z-index: 100;
 		    	transition: background 0s $button-transistion-duration;
 		      	&::before,
 		      	&::after{
@@ -75,25 +77,28 @@ $button-transistion-duration: 0.3s;  // The transition duration
 		    &.is-active{
 				& + .header__menu{
 					display: block;
-					z-index: 50;
+					z-index: 5;
 					position: fixed;
 					top: 0;
 					right:  0;
 					width: 100%;
 					height: 100%;
-					background: rgba(34, 40, 49,0.9);
-					margin-top: 125px;
-					
+					background: rgba(34, 40, 49,0.95);
 					.header__ul{
-						margin-top: 50px;
+						margin-top: 70px;
 						flex-direction: column;
 						justify-content: center;
 						align-items: center;
+						font-family: 'Montserrat', sans-serif;
+						font-size: 30px;
+						.header__li{
+							border-bottom: 1px solid rgb(255, 211, 105);
+						}
 					}
 				}
 		    	span{
 		    		background: none;
-		    		z-index: 30;
+		    		z-index: 100;
 		        	&::before,
 		        	&::after{
 		        		background-color: darken($animx-color, 25%);
