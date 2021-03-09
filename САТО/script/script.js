@@ -12,8 +12,25 @@
   function toggleHandler(toggle) {
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
-      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+      if (this.classList.contains("is-active") === true){
+        this.classList.remove("is-active")
+      } else{
+        this.classList.add("is-active");
+        window.addEventListener('DOMMouseScroll', preventDefault, false);
+        window.onwheel = preventDefault; // modern standard
+        window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+        window.ontouchmove  = preventDefault; // mobile
+        document.onkeydown  = preventDefaultForScrollKeys;
+      }
     });
   }
+  window.addEventListener("scroll",function(){
+    if (pageYOffset>1){
+      document.getElementsByClassName("header")[0].classList.add("scrolled");
+    }
+    else{
+      document.getElementsByClassName("header")[0].classList.remove("scrolled");
+    }
+  })
 
 })();
