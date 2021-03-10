@@ -1,8 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 $yell: #FFD369;
 .slider{
 	margin-top: 100px;
 	padding: 0 40px;
 	position: relative;
+
+	.slider__item{
+		margin: 0 70px;
+		display: flex;
+		text-align: left;
+		background: white;
+		border-radius: 2%;
+		.slider__item-content{
+			display: flex;
+			position: relative;
+			max-width: 75%;
+			padding: 50px 0px 70px 50px;
+			font-family: 'DM Serif Display', serif;
+			.dots{
+				height: 50px;
+				width: 50px;
+				background:url("../images/Comas.png")no-repeat ;
+			}
+			.name{
+				font-size: 26px;
+				letter-spacing: 3%;
+			}
+			.position{
+				margin-top: 30px;
+				font-size: 18px;
+				font-style: italic;
+				line-height: 28px;
+			}
+			.info{
+				font-family: 'open sans';
+				font-weight: 400;
+				line-height: 27px;
+				font-size: 18px;
+				color:#6E798C;
+				margin: 30px 0 ;
+			}
+			.more{
+				position: absolute;
+				bottom: 70px;
+				font-family: 'open sans';
+				font-weight: 300;
+				line-height: 27px;
+				font-size: 18px;
+				color:#6E798C;
+				font-style: italic;
+			}
+		}
+		.slider__item-photo{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			padding-top: 10%;
+			padding-right: 20px;
+			font-family: Open Sans;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 27px;
+			img{
+				max-width: 165px;
+			}
+			a{
+				text-align: left;
+				color: #6E798C;
+			}
+
+		}
+	}
 	.slick-arrow{
 		position: absolute;
 		top: 50%;

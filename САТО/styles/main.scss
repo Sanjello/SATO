@@ -15,7 +15,9 @@ $yell: #FFD369;
 }
 
 /*------Container----*/
-
+body{
+	background: rgb(34, 40, 49);
+}
 .container{
 	margin: 0 auto;
 	max-width: 1600px/1920px *100%;
@@ -24,7 +26,6 @@ $yell: #FFD369;
 section{
 	min-height: 100vh;
 	width: 100%;
-	border-bottom: 1px solid black;
 }
 .section-top{
 	z-index: 1;
