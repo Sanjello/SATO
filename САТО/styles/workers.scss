@@ -1,3 +1,11 @@
+$yell: #FFD369;
 .workers{
 	background: url("../images/Workers.svg")no-repeat center top/cover;
+	.worckers__title{
+		padding:20px 0 0 170px;
+		font-size: 46px;
+		line-height: 50px;
+		color:$yell;
+		font-style: 'Montserrat';
+	}
 }
