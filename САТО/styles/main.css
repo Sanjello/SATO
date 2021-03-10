@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -376,8 +377,54 @@ section {
 }
 /* button starting stylings ------------------------------- */
 /*------About us----*/
+/* some SCSS variables */
+/* end var */
 .about-us {
   background: url("../images/About.svg") no-repeat center top/cover;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+.about-us span {
+  color: #FFD369;
+}
+.about-us .about-us__title {
+  color: #FFD369;
+  font-size: 56px;
+  font-weight: 700;
+  padding-top: 3%;
+  padding-left: 11%;
+}
+.about-us .about-us__text {
+  text-align: center;
+  size: 24px;
+  line-height: 28px;
+  padding-top: 10%;
+}
+.about-us .about-us__subtitle {
+  font-size: 48px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.photo-container {
+  display: grid;
+  row-gap: 91px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.photo-container .photo-container__item {
+  text-align: center;
+}
+@media (max-width: 1480px) {
+  .photo-container .photo-container__item img {
+    width: 259px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1235px) {
+  .photo-container .photo-container__item img {
+    width: 19px;
+    margin-bottom: 30px;
+  }
 }
 
 /*------History----*/
