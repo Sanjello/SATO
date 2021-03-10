@@ -24,13 +24,6 @@
       }
     });
   }
-  window.addEventListener("scroll",function(){
-    if (pageYOffset>1){
-      document.getElementsByClassName("header")[0].classList.add("scrolled");
-    }
-    else{
-      document.getElementsByClassName("header")[0].classList.remove("scrolled");
-    }
-  })
+  
 
 })();
