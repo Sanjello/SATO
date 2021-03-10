@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* some SCSS variables */
+$yell: #FFD369;
+
+
+/* end var */
+
 .about-us{
 	background: url("../images/About.svg")no-repeat center top/cover;
+	
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	
+	span{
+		color: $yell;
+	}
+	.about-us__title{
+		color: $yell;
+		font-size: 56px;
+		font-weight: 700;
+		padding-top: 3%;
+		padding-left: 11%;
+		
+	}
+	.about-us__text{
+		text-align: center;
+		size: 24px;
+		line-height: 28px;
+		padding-top: 10%;
+	}
+	.about-us__subtitle{
+		font-size: 48px;
+		text-align: center;
+		padding-top: 40px;
+	}
+}
+.photo-container{
+	display: grid;
+	row-gap: 91px;
+	//border: 2px solid green;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	
+	.photo-container__item{
+		text-align: center;
+
+	}
+
+	.photo-container__item img{
+		@media (max-width: 1480px) {
+			width: 259px;
+			margin-bottom: 30px;
+			//border: 2px solid red;
+		}
+		@media (max-width: 1235px) {
+			width: 19px;
+			margin-bottom: 30px;
+			//border: 2px solid yellow;
+		}
+
+		//width: 100.35px;
+	}
 }
