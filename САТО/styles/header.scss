@@ -2,12 +2,15 @@ $yell: #FFD369;
 $dark:#222831;
 .header{
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	left: 0;
 	top: 0;
 	z-index: 50;
 	&.scrolled{
 		background: rgba(15, 16, 20,0.97);
+		.header__li{
+			border-left: 1px solid $yell;
+		}
 		
 	}
 	&:before{

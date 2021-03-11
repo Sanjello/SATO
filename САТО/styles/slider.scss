@@ -11,26 +11,54 @@ $yell: #FFD369;
 		text-align: left;
 		background: white;
 		border-radius: 2%;
+		
 		.slider__item-content{
+			margin: 0 auto;
 			display: flex;
 			position: relative;
 			max-width: 75%;
-			padding: 50px 0px 70px 50px;
+			padding: 50px 10px 70px 50px;
 			font-family: 'DM Serif Display', serif;
+			@media (max-width: 870px) {
+				padding: 0 0 70px;
+			}
+			@media (max-width: 630px) {
+					padding-bottom: 0px;
+			}
 			.dots{
 				height: 50px;
 				width: 50px;
 				background:url("../images/Comas.png")no-repeat ;
+				@media (max-width: 870px) {
+					margin: 0 auto;
+					margin-top: 10px;
+					height: 120px;
+					width: 120px;
+					background:url("../images/circle.png")0 0/cover;
+				}
 			}
 			.name{
 				font-size: 26px;
 				letter-spacing: 3%;
+				@media (max-width: 970px) {
+					font-size: 20px;
+				}
+				@media (max-width: 870px) {
+					text-align: center;
+					margin-top: 20px;
+				}
 			}
 			.position{
 				margin-top: 30px;
 				font-size: 18px;
 				font-style: italic;
 				line-height: 28px;
+				@media (max-width: 970px) {
+					font-size: 14px;
+				}
+				@media (max-width: 870px) {
+					text-align: center;
+				}
 			}
 			.info{
 				font-family: 'open sans';
@@ -38,7 +66,16 @@ $yell: #FFD369;
 				line-height: 27px;
 				font-size: 18px;
 				color:#6E798C;
-				margin: 30px 0 ;
+				margin: 30px 0;
+				@media (max-width: 970px) {
+					font-size: 14px;
+				}
+				@media (max-width: 870px) {
+					text-align: center;
+				}
+				@media (max-width: 630px) {
+					display: none;
+				}
 			}
 			.more{
 				position: absolute;
@@ -49,19 +86,25 @@ $yell: #FFD369;
 				font-size: 18px;
 				color:#6E798C;
 				font-style: italic;
+				@media (max-width: 630px) {
+					display: none;
+				}
 			}
 		}
 		.slider__item-photo{
 			display: flex;
 			align-items: center;
 			flex-direction: column;
-			padding-top: 10%;
+			padding-top: 5%;
 			padding-right: 20px;
 			font-family: Open Sans;
 			font-size: 14px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: 27px;
+			@media (max-width: 870px) {
+				display: none;
+			}
 			img{
 				max-width: 165px;
 			}
@@ -75,7 +118,7 @@ $yell: #FFD369;
 	.slick-arrow{
 		position: absolute;
 		top: 50%;
-		margin: 35px 0 0 0 ;
+		margin: -35px 10px 0 10px ;
 		z-index: 10;
 		font-size: 0;
 		width: 58px;
@@ -97,11 +140,18 @@ $yell: #FFD369;
 		li{
 			list-style: none;
 			margin: 0 20px;
+			@media (max-width: 630px) {
+				margin: 0 10px;
+			}
 		}
 		.slick-active{
 			button{
 				width: 38px;
-			height: 38px;
+				height: 38px;
+				@media (max-width: 630px) {
+					width: 19px;
+					height: 19px;
+				}
 			}
 		}
 		button{
@@ -110,6 +160,10 @@ $yell: #FFD369;
 			width: 19px;
 			height: 19px;
 			border-radius: 50%;
+			@media (max-width: 630px) {
+				width: 9px;
+				height: 9px;
+			}
 		}
 	}
 }
@@ -143,9 +197,13 @@ $yell: #FFD369;
 /* Слайд */
 .slick-slide{
 	text-align: center;
+	@media (max-width: 470px) {
+		max-width: 60vw;
+	}
 }
 /* Слайд активный (показывается) */
-.slick-slide.slick-active{}
+.slick-slide.slick-active{
+}
 /* Слайд основной */
 .slick-slide.slick-current{
 

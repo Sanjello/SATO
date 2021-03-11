@@ -13,7 +13,7 @@
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
       if (this.classList.contains("is-active") === true){
-        this.classList.remove("is-active")
+        this.classList.remove("is-active");
       } else{
         this.classList.add("is-active");
         window.addEventListener('DOMMouseScroll', preventDefault, false);
