@@ -1,3 +1,18 @@
+$yell: #FFD369;
 .workers{
-	background: url("../images/Workers.svg")no-repeat center top/cover;
+	background: url("../images/Workers.svg")no-repeat top left/cover;
+	.worckers__title{
+		padding-top: 1.5%;
+		padding-left: 18%;
+		font-size: 56px;
+		line-height: 50px;
+		color:$yell;
+		font-style: 'Montserrat';
+		@media (max-width: 630px) {
+			font-size: 40px;
+		}
+		@media (max-width: 400px) {
+			font-size: 26px;
+		}
+	}
 }

@@ -34,7 +34,8 @@ window.onload=function(){
 			e.preventDefault();   /*Off standart event*/
 
 			let href = this.getAttribute('href').substring(1);
-
+			var toggle = document.querySelectorAll(".toggle-burger")[0];
+			toggle.classList.remove("is-active");
 			const scrollTarget = document.getElementsByClassName(href)[0];    /*Find element scroll to*/
 	        const topOffset = document.querySelector('.header').offsetHeight; /*Height of header*/
 	        const elementPosition = scrollTarget.getBoundingClientRect().top; /*Height from top to element*/
