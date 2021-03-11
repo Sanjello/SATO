@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 		},
 		{
-			breakpoint:470,
+			breakpoint:540,
 			settings:{
 				variableWidth: true
 			}
