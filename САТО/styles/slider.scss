@@ -118,7 +118,7 @@ $yell: #FFD369;
 	.slick-arrow{
 		position: absolute;
 		top: 50%;
-		margin: -35px 10px 0 10px ;
+		margin: -70px 10px 0 10px ;
 		z-index: 10;
 		font-size: 0;
 		width: 58px;
@@ -133,7 +133,7 @@ $yell: #FFD369;
 		background: url("../images/Arrow R.svg")0 0 /100% no-repeat;
 	}
 	.slick-dots{
-		margin: 30px 0;
+		padding: 30px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
