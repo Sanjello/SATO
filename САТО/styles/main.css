@@ -672,7 +672,7 @@ section {
 /* Элемент точки */
 /*------Workers----*/
 .workers {
-  background: url("../images/Workers.svg") no-repeat center top/cover;
+  background: url("../images/Workers.svg") no-repeat top left/cover;
 }
 .workers .worckers__title {
   padding-top: 1.5%;
@@ -695,5 +695,5 @@ section {
 
 /*------Robototechnics----*/
 .robototechnics {
-  background: url("../images/Robotechnics.svg") no-repeat center top/cover;
+  background: url("../images/Robotechnics.svg") no-repeat top left/cover;
 }
