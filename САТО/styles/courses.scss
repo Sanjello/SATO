@@ -1,3 +1,120 @@
+$yell: #FFD369;
+$max-font: 56px;
 .courses{
+	.courses__container{
+		.courses__title{
+			@media (min-width: 1200px){
+				font-size: $max-font;
+				padding: 4% 0 0 15%;
+			}
+			/* Landscape tablets and medium desktops */
+			@media (max-width: 1200px){
+				font-size: $max-font;
+				padding: 4% 0 0 11%;
+			}
+			/* Portrait tablets and small desktops */
+			@media (max-width: 992px){
+				font-size: 36px;
+				padding: 4% 0 0 0;
+				text-align: center;
+				.courses__container{
+					padding-top: 10px;
+				}
+			}
+			/* Landscape phones and portrait tablets */
+			@media (max-width: 768px) {
+				font-size: 30px;
+				text-align: center;
+				padding: 6% 0 0 0;
+			}
+		}
+	}
 	background: url("../images/Courses.svg")no-repeat top left/cover;
+	/* Media queries for title*/
+	color: $yell;
+	/* Large desktops and laptops */
+	
+	/* End of mediaqueries*/
+	.content{
+		padding: 50px 0 0 0;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		.tabs{
+			margin: 0 auto;
+
+		}
+		.tabs__items{
+			display: flex;
+			align-items: center;
+			.tabs__item{
+				border: 1px solid white;
+				color:#fff;
+				text-decoration: none;
+				padding: 15px 30px;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 18px;
+				max-width: 380px;
+				height: 100%;
+			}
+		}
+		.tabs__body{
+			.tabs__block{
+				display: none;
+				tr{
+					th{
+						font-style: normal;
+						font-weight: normal;
+						font-size: 15px;
+						line-height: 18px;
+						height: 100px;
+						border:none;
+					}
+					td{
+						color:#000;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 17px;
+						line-height: 18px;
+						align-items: center;
+						text-align: center;
+						height: 110px;
+						width: 190px;
+					}
+				}
+				&:target{
+					display: block;
+				}
+				&:nth-child(1):before{
+					background: rgb(78, 78, 83);
+					height: 100px;
+					width: 100px;
+					left: 33.3333%;
+				}
+			}
+			#tab_01{
+				tr{
+					th{
+						background: rgb(78, 78, 83);
+					}
+					td{
+						background:#AEC0CA;
+					}
+				}
+			}
+			#tab_02{
+				tr{
+					th{
+						background: rgb(78, 78, 83);
+					}
+					td{
+						background:#FBD1B9;
+					}
+				}
+			}
+		}
+
+	}
 }
