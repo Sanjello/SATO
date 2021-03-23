@@ -4,20 +4,11 @@
 
   var toggles = document.querySelectorAll(".toggle-burger");
   var tabs =  document.querySelectorAll(".tabs__item");
-  for (var i = tabs.length - 1; i >= 0; i--) {
+  for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
     toggleHandler(toggle);
   }; 
 
-  for (var i = toggles.length - 1; i >= 0; i--) {
-    var tab = tabs[i];
-    prevent_action(tab);
-  };
-  function prevent_action(tab){
-    tab.addEventListener( "click", function(e) {
-      e.preventDefault();
-    }
-  }
   function toggleHandler(toggle) {
     toggle.addEventListener( "click", function(e) {
       e.preventDefault();
