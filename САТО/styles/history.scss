@@ -1,3 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* some SCSS variables */
+
+$yell: #FFD369;
+$max-font: 56px;
+
+/* end var */
+
 .history{
-	background: url("../images/History.svg")no-repeat top left/cover;
+	@media (min-width: 1200px){
+		background: url("../images/About.svg")no-repeat top left/cover;
+	}
+	
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+
+	.history__title{
+		color: $yell;
+		font-weight: 700;
+
+		/* Media queries for title*/
+		
+		/* Large desktops and laptops */
+		@media (min-width: 1200px){
+			font-size: $max-font;
+			padding: 2% 0 0 15%;
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			font-size: $max-font;
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			font-size: 36px;
+			text-align: center;
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			font-size: 30px;
+			text-align: center;
+		}
+		/* End of mediaqueries*/
+		
+	}
+
+	.history__text-container{
+		display: grid;
+		margin-top: 8%;
+
+		/* Large desktops and laptops */
+		@media (min-width: 1200px) {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 8%;
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			grid-template-columns: 1fr 1fr;
+			column-gap: 8%;
+			.history__text{
+				font-size: 14px;
+			}
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			grid-template-columns: 1fr;
+			.history__text{
+				line-height: 30px;
+				padding: 4% 0;
+			}
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+		}
+		
+	}
+	.history__text{
+		text-align: center;
+		font-size: 18px;
+		line-height: 21px;	
+		padding: 8% 0;
+	}
+
+	.text{
+		padding: 8% ;
+		width: fit-content;
+	}
+
+	.history__photo-container{
+		display: flex;
+		justify-items: center;
+		
+		/* Large desktops and laptops */
+		@media (min-width: 1200px){
+			justify-content: space-evenly;
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			justify-content: space-evenly;
+			.history__photo-item{
+				width: 360px;
+			}
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			flex-direction: column;
+			.history__photo-item{
+				display: block;
+				align-self: center;
+				width: 560px;
+				padding: 5%;
+			}
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			flex-direction: column;
+			.history__photo-item{
+				padding: 2%;;
+				display: block;
+				width: 300px;
+				align-self: center;
+			}
+		}
+	}
 }
+
+
