@@ -29,7 +29,7 @@ $yell: #FFD369;
 			.dots{
 				height: 50px;
 				width: 50px;
-				background:url("../images/Comas.png")no-repeat ;
+				background:url("../images/Slider/Comas.png")no-repeat ;
 				@media (max-width: 730px) {
 					display: none;
 				}
@@ -140,11 +140,11 @@ $yell: #FFD369;
 	}
 	.slick-prev{
 		left: 0;
-		background: url("../images/Arrow L.svg")0 0 /100% no-repeat;
+		background: url("../images/Slider/Arrow L.svg")0 0 /100% no-repeat;
 	}
 	.slick-next{
 		right: 0;
-		background: url("../images/Arrow R.svg")0 0 /100% no-repeat;
+		background: url("../images/Slider/Arrow R.svg")0 0 /100% no-repeat;
 	}
 	.slick-dots{
 		padding: 30px 0;

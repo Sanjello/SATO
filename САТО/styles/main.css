@@ -88,7 +88,7 @@ section {
 
 .section-top {
   z-index: 1;
-  background: url("../images/background.svg") no-repeat center top/cover;
+  background: url("../images/Backgrounds/top.svg") no-repeat center top/cover;
   display: flex;
   text-align: center;
   align-items: center;
@@ -394,7 +394,7 @@ section {
 }
 @media (min-width: 1200px) {
   .about-us {
-    background: url("../images/About.svg") no-repeat top left/cover;
+    background: url("../images/Backgrounds/About.svg") no-repeat top left/cover;
   }
 }
 .about-us span {
@@ -543,7 +543,7 @@ section {
 }
 @media (min-width: 1200px) {
   .history {
-    background: url("../images/About.svg") no-repeat top left/cover;
+    background: url("../images/Backgrounds/History.svg") no-repeat top left/cover;
   }
 }
 .history .history__title {
@@ -674,7 +674,7 @@ section {
 
 /*------Courses----*/
 .courses {
-  background: url("../images/Courses.svg") no-repeat top left/cover;
+  background: url("../images/Backgrounds/Courses.svg") no-repeat top left/cover;
   /* Media queries for title*/
   color: #FFD369;
   /* Large desktops and laptops */
@@ -818,7 +818,7 @@ section {
 .slider .slider__item .slider__item-content .dots {
   height: 50px;
   width: 50px;
-  background: url("../images/Comas.png") no-repeat;
+  background: url("../images/Slider/Comas.png") no-repeat;
 }
 @media (max-width: 730px) {
   .slider .slider__item .slider__item-content .dots {
@@ -949,11 +949,11 @@ section {
 }
 .slider .slick-prev {
   left: 0;
-  background: url("../images/Arrow L.svg") 0 0/100% no-repeat;
+  background: url("../images/Slider/Arrow L.svg") 0 0/100% no-repeat;
 }
 .slider .slick-next {
   right: 0;
-  background: url("../images/Arrow R.svg") 0 0/100% no-repeat;
+  background: url("../images/Slider/Arrow R.svg") 0 0/100% no-repeat;
 }
 .slider .slick-dots {
   padding: 30px 0;
@@ -1031,7 +1031,7 @@ section {
 /* Элемент точки */
 /*------Workers----*/
 .workers {
-  background: url("../images/Workers.svg") no-repeat top left/cover;
+  background: url("../images/Backgrounds/Workers.svg") no-repeat top left/cover;
 }
 .workers .worckers__title {
   padding-top: 1.5%;
@@ -1070,5 +1070,5 @@ section {
 
 /*------Robototechnics----*/
 .robototechnics {
-  background: url("../images/Robotechnics.svg") no-repeat top left/cover;
+  background: url("../images/Backgrounds/Robotechnics.svg") no-repeat top left/cover;
 }
