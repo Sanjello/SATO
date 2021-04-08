@@ -824,3 +824,40 @@ section {
 .robototechnics {
   background: url("../images/Robotechnics.svg") no-repeat top left/cover;
 }
+.robototechnics .robototechnics_inner {
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  background-color: white;
+  height: 900px;
+  width: 1200px;
+  line-height: 28px;
+  padding: 10% 0 10% 0;
+}
+.robototechnics .robototechnics_head {
+  text-align: left;
+  font-size: 56px;
+  line-height: 50px;
+  color: #FFD369;
+  font-style: "Montserrat";
+  padding-bottom: 20px;
+  padding-left: 400px;
+  color: #FFD369;
+}
+.robototechnics .robototechnics_inner_text {
+  font-family: "open sans";
+  font-weight: 400;
+  line-height: 27px;
+  font-size: 18px;
+  color: #6E798C;
+  margin: 30px 0;
+  text-align: center;
+}
+.robototechnics .robototechnics_inner_img {
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
