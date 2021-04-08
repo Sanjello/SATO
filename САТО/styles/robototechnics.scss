@@ -1,29 +1,27 @@
 .robototechnics{
 	background: url("../images/Robotechnics.svg")no-repeat top left/cover;
-
+	padding: 50px 0;
 	.robototechnics_inner {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
 		border-radius: 20px;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		height: 1px;
 		overflow: hidden;
 		background-color: white;
-		height: 900px;
-		width: 1200px;
+		max-height: 900px;
+		max-width: 1200px;
 		line-height: 28px;
-		padding: 10% 0 10% 0;
+		padding: 5% 10% ;
+		align-items: center;
 	}
 	
 	.robototechnics_head {
-		text-align: left;
 		font-size: 56px;
-		line-height: 50px;
-		color: #FFD369;
+		line-height: 56px;
 		font-style: "Montserrat";
 		padding-bottom: 20px;
-		padding-left: 400px;
 		color: #FFD369;
+		margin:20px 0 ;
 	}
 	
 	.robototechnics_inner_text {
@@ -32,14 +30,16 @@
 		line-height: 27px;
 		font-size: 18px;
 		color: #6E798C;
-		margin: 30px 0;
+		margin: 50px 0;
 		text-align: center;
 	}
 	
-	.robototechnics_inner_img {
-		text-align: center;
-		margin: auto;
-		border-radius: 10px;
+	.robototechnics_img_container {
+		display: flex;
+		margin-top: 50px;
 	}
-
+	.robototechnics_inner_img{
+		border-radius: 10px;
+		margin: 0 20px;
+	}
 }
