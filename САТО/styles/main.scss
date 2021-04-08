@@ -16,7 +16,7 @@ $yell: #FFD369;
 
 /*------Container----*/
 body{
-	//background: rgb(34, 40, 49);
+	background: rgb(34, 40, 49);
 }
 .container{
 	margin: 0 auto;
@@ -31,7 +31,7 @@ section{
 }
 .section-top{
 	z-index: 1;
-	background: url("../images/background.svg")no-repeat center top/cover;
+	background: url("../images/Backgrounds/top.svg")no-repeat center top/cover;
 	display: flex;
 	text-align: center;
 	align-items: center;
