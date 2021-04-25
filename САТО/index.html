@@ -177,24 +177,42 @@
 		<!--------Section-courses---------->
 		<section class="courses">
 			<div class="courses__container ">
-				<h1 class="courses__title container">
+				<h1 class="courses__header container">
 					Перелік курсів
 				</h1>
-				<div class="tabs">
-					<div class="tabs__nav" style="overflow-x:auto;">
-						<button class="tabs__nav-btn active" type="button" data-tab="#tab_1"> Освітня програма<br>
-							«Аналіз даних та сучасні технології програмування »</button>
-            			<button class="tabs__nav-btn" type="button" data-tab="#tab_2"> Освітня програма<br>
-							«Системний аналіз»</button>
-            			<button class="tabs__nav-btn" type="button" data-tab="#tab_3">Магістри</button>
+				<div class="tabs" style="overflow-x:auto;">
+					<div class="tabs__container" >
+						<div class="tabs__nav" >
+							<button class="tabs__nav-btn active" type="button" data-tab="#tab_1"> Освітня програма<br>
+								«Аналіз даних та сучасні технології програмування »</button>
+							<button class="tabs__nav-btn" type="button" data-tab="#tab_2"> Освітня програма<br>
+								«Системний аналіз»</button>
+							<button class="tabs__nav-btn" type="button" data-tab="#tab_3">Магістри</button>
+						</div>
+						<div class="tabs__content" >
+							<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class=" tabs__item active" id="tab_1" ></table> 
+							<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class="tabs__item" id="tab_2"></table> 
+							<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class=" tabs__item" id="tab_3" ></table> 
+						</div> <!--/tabs__content-->
+					</div><!--/tabs__container-->
+				</div><!--/tabs-->
+				<div class="courses__info">
+					<div class="program_container">
+						<h2>Освітня програма “Аналіз даних та сучасні технології програмування”</h2>
+						<p>Основною метою освітньої програми є підготовка висококваліфікованих фахівців для вирішення різноманітних завдань, що відносяться до областей системного аналізу, інженерії даних і знань, наук про дані, аналізу даних, що дасть їм можливість ефективно виконувати завдання інноваційного характеру відповідного рівня професійної діяльності, яка орієнтована на дослідження й розв’язання складних задач дослідження, збору та аналізу даних з різноманітних інформаційних ресурсів для задоволення потреб науки, бізнесу та підприємств у різних галузях.
+
+							Освітня програма також спрямована на поглиблене вивчення сучасних мов та засобів програмування,  та передбачає практичну підготовку у галузі обробки даних з глибоким знанням методів машинного навчання, обробки великих даних, вивченням хмарних технологій.</p>
 					</div>
-					<div class="tabs__content" style="overflow-x:auto;">
-						<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class=" tabs__item active" id="tab_1" ></table> 
-						<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class="tabs__item" id="tab_2"></table> 
-						<table width='100%' cellpadding='0' cellspacing='0' style='border-collapse:collapse' class=" tabs__item" id="tab_3" ></table> 
+					<div class="additional_info__container">
+						<h3>Основний фокус освітньої програми</h3>
+						<p>Акцент на глибоких знаннях в області системного аналізу та науки про дані (інженерія даних, задач обробка великих обсягів інформації, машинне навчання та ін.)</p>
+					</div>
+					<div class="additional_info__container">
+						<h3>Особливості програми</h3>
+						<p> Освітня програма спрямована на поглиблене вивчення сучасних мов програмування та підходів до обробки даних.</p>
 					</div>
 				</div>
-			</div>
+			</div><!--/courses__container-->
 		</section>
 		<!-- /section-courses-->
 		<!--------Section-workers---------->
@@ -458,11 +476,23 @@
 					<img class="robototechnics_inner_img" src="images/00000000002.jfif" alt=""  height="280px">
 					<img class="robototechnics_inner_img" src="images/4324244.jfif" alt=""  height="280px">
 				</div>				
-			</div>
+			</div><!--/robototechnics_inner-->
 		</section>
-		
-		<!--  -->
 		<!-- /section-robototechnics-->
+
+
+		<!--------Section-sport_programming---------->
+		<section class="sport_programming">
+			<div class="sport_programming__wrapper">
+				<h2 class="sport_programming__head">СПОРТИВНЕ ПРОГРАМУВАННЯ</h2>
+				<p class="sport_programming__text">Також у нас успішно функціонує гурток спортивного програмування, де студенти мають змогу розвинути свої навчки у розв’язанні олімпіадних задач. Розв`язання такого роду задач є надзвичайно корисним. По-перше, вони вчать мислити нестандартно та розвивають логіку. По-друге, дозволяють на практиці застосувати різні можливості тої чи іншої мови програмування. </p>
+				<div class="sport_programming__img_container">
+					<img class="sport_programming__img" src="images/00000000002.jfif" alt=""  height="280px">
+					<img class="sport_programming__img" src="images/4324244.jfif" alt=""  height="280px">
+				</div>
+			</div><!--/sport_programming__wrapper-->
+		</section>
+		<!-- /section-sport_programming-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script/slick.min.js"></script>
 	<script type="text/javascript" src="script/script.js"></script>

@@ -3,20 +3,24 @@ $max-font: 56px;
 .courses{
 	.courses__container{
 		padding: 20px;
-		.courses__title{
+		.courses__header{
 			@media (min-width: 1200px){
 				font-size: $max-font;
 				padding: 4% 0 0 15%;
 			}
+			@media (max-width: 1350px){
+				font-size: $max-font;
+				padding: 6% 0 0 11%;
+			}
 			/* Landscape tablets and medium desktops */
 			@media (max-width: 1200px){
 				font-size: $max-font;
-				padding: 4% 0 0 11%;
+				padding: 8% 0 0 11%;
 			}
 			/* Portrait tablets and small desktops */
 			@media (max-width: 992px){
 				font-size: 36px;
-				padding: 4% 0 0 0;
+				padding: 6% 0 0 0;
 				text-align: center;
 				.courses__container{
 					padding-top: 10px;
@@ -39,9 +43,15 @@ $max-font: 56px;
 	.tabs {
 		max-width: 100vw;
 		margin: 50px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media (max-width:1000px) {
+			align-items: flex-start;
+		}
 		.tabs__nav{
 			display: flex;
-			align-items: center;
+			//align-items: center;
 			background: rgb(50, 56, 64);
 			.tabs__nav-btn{
 				color:#fff;
@@ -55,6 +65,17 @@ $max-font: 56px;
 				background-color: inherit;
     			cursor: pointer;
 				border-radius: 10px 10px 10px 0px;
+				@media (max-width:900px) {
+					font-size: 16px;
+					line-height: 17px;
+					height: 60px;
+				}
+				@media (max-width:760px) {
+					font-size: 16px;
+					line-height: 17px;
+					height: 120px;
+					max-width: 250px;
+				}
 				&.active {
 					background-color: #4E4E53;
 					color: #fff;
@@ -67,6 +88,7 @@ $max-font: 56px;
 				}			
 			}
 		}
+
 		.tabs__item{
 			display: none;
 			tr{
@@ -92,13 +114,60 @@ $max-font: 56px;
 
 					height: 110px;
 					width: 190px;
-					background:$yell;
 
 					padding: 0 3px;
 				}
 			}	
 			&.active{
 				display: block;
+			}
+		}
+	}
+	.courses__info{
+		max-width: 1200/1920*100%;
+		margin: 0 auto;
+		text-align: center;
+		@media (max-width:530px) {
+			max-width: 1600/1900*100%;
+		}
+		.program_container{
+			h2{
+				font-weight: 700;
+				font-size:36px;
+				line-height: 42px;
+				@media (max-width:690px) {
+					font-size:27px;
+				}
+			}
+			p{
+				font-weight: 400;
+				font-size:24px;
+				color:#fff;
+				line-height: 28px;
+				margin: 20px 0;
+				@media (max-width:690px) {
+					font-size:16px;
+				}
+			}
+		}
+		.additional_info__container{
+			h3{
+				font-weight: 700;
+				font-size:24px;
+				line-height: 28px;
+				@media (max-width:690px) {
+					font-size:16px;
+				}
+			}
+			p{
+				font-weight: 400;
+				font-size:24px;
+				color:#fff;
+				line-height: 28px;
+				margin: 20px 0;
+				@media (max-width:690px) {
+					font-size:16px;
+				}
 			}
 		}
 	}
