@@ -25,45 +25,53 @@
 
   function crateHeadRow(row){
     let list = `<tr>
-			<th>${checkUndefined(row["A"])}</th>
-			<th>${checkUndefined(row["B"])}</th>
-			<th>${checkUndefined(row["C"])}</th>
-			<th>${checkUndefined(row["D"])}</th>
-			<th>${checkUndefined(row["E"])}</th>
-			<th>${checkUndefined(row["F"])}</th>
-			<th>${checkUndefined(row["G"])}</th>
-      <th>${checkUndefined(row["H"])}</th>
+			<th>${checkUndefinedText(row["A"])}</th>
+			<th>${checkUndefinedText(row["B"])}</th>
+			<th>${checkUndefinedText(row["C"])}</th>
+			<th>${checkUndefinedText(row["D"])}</th>
+			<th>${checkUndefinedText(row["E"])}</th>
+			<th>${checkUndefinedText(row["F"])}</th>
+			<th>${checkUndefinedText(row["G"])}</th>
+      <th>${checkUndefinedText(row["H"])}</th>
 			</tr>`
     return list;
   }
 
   function crateRow(row){
     let list = `<tr>
-			<td>${checkUndefined(row["A"])}</td>
-			<td>${checkUndefined(row["B"])}</td>
-			<td>${checkUndefined(row["C"])}</td>
-			<td>${checkUndefined(row["D"])}</td>
-			<td>${checkUndefined(row["E"])}</td>
-			<td>${checkUndefined(row["F"])}</td>
-			<td>${checkUndefined(row["G"])}</td>
-      <td>${checkUndefined(row["H"])}</td>
+			<td style="background:${checkUndefinedColor(row["A"])};">${checkUndefinedText(row["A"])}</td>
+			<td style="background:${checkUndefinedColor(row["B"])};">${checkUndefinedText(row["B"])}</td>
+			<td style="background:${checkUndefinedColor(row["C"])};">${checkUndefinedText(row["C"])}</td>
+			<td style="background:${checkUndefinedColor(row["D"])};">${checkUndefinedText(row["D"])}</td>
+			<td style="background:${checkUndefinedColor(row["E"])};">${checkUndefinedText(row["E"])}</td>
+			<td style="background:${checkUndefinedColor(row["F"])};">${checkUndefinedText(row["F"])}</td>
+			<td style="background:${checkUndefinedColor(row["G"])};">${checkUndefinedText(row["G"])}</td>
+      <td style="background:${checkUndefinedColor(row["H"])};">${checkUndefinedText(row["H"])}</td>
 			</tr>`
     return list;
   }
   /* Func for transform undefind returns from API*/
-  function checkUndefined(data){
+  function checkUndefinedColor(data){
+    if(data == undefined){
+      return "rgba(78, 78, 83,.1)";
+    }
+    else{
+      return data["color"];
+    }
+  }
+  function checkUndefinedText(data){
     if(data == undefined){
       return "";
     }
     else{
-      return data
+      return data["text"];
     }
-
   }
 /* Func for get data from API*/
   function getCourses(){
     return fetch("http://localhost:3000/api/courses")
     .then((response=>{
+      console.log(response);
       return response.json(response);
     }));
   }
@@ -72,16 +80,16 @@
     let list = "";
     
     courses.forEach(course => {
-      if (course["_id"] =='60843597c6e54a0c4861dea1') {
+      if (course["_id"] =='60852e41a3b547070469f4fe') {
         list += crateHeadRow(course);
       }
     });
     courses.forEach(course => {
-      if (course["_id"] !='60843597c6e54a0c4861dea1') {
+      if (course["_id"] !='60852e41a3b547070469f4fe') {
         list += crateRow(course);
       }
     });
-    $("#tab_1").html(list);
+    $(".tabs__item").html(list);
   })
   const tabsBtn   = document.querySelectorAll(".tabs__nav-btn");
   const tabsItems = document.querySelectorAll(".tabs__item");

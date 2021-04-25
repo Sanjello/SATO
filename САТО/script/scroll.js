@@ -17,34 +17,32 @@ window.onload=function(){
 
 	/*-------------Scroll functions----------------*/
 
+	function calcAndScroll(data){
+		const scrollTarget = document.getElementsByClassName(data)[0];    /*Find element scroll to*/
+	    const topOffset = document.querySelector('.header').offsetHeight; /*Height of header*/
+	    const elementPosition = scrollTarget.getBoundingClientRect().top; /*Height from top to element*/
+	    const offsetPosition = elementPosition - topOffset;				  /*Calculate heigt to scroll */
+		window.scrollBy({
+	        top: offsetPosition,
+	        behavior: 'smooth'
+	    })			  
+	}
 	                  /*More button*/
 	top_button.addEventListener("click",function(e){
 		e.preventDefault();
-		blockClass = top_button.getAttribute("href").substring(1);
-
-		document.getElementsByClassName(blockClass)[0].scrollIntoView({
-			behavior: 'smooth',
-			block: 'start'
-		})
+		href = top_button.getAttribute("href").substring(1);
+	    calcAndScroll(href);
 	})
 	
 				/*Navigation buttons*/
 	for (let el of buttons){
 		el.addEventListener('click',function(e){
-			e.preventDefault();   /*Off standart event*/
+			e.preventDefault();  
 
 			let href = this.getAttribute('href').substring(1);
 			var toggle = document.querySelectorAll(".toggle-burger")[0];
 			toggle.classList.remove("is-active");
-			const scrollTarget = document.getElementsByClassName(href)[0];    /*Find element scroll to*/
-	        const topOffset = document.querySelector('.header').offsetHeight; /*Height of header*/
-	        const elementPosition = scrollTarget.getBoundingClientRect().top; /*Height from top to element*/
-	        const offsetPosition = elementPosition - topOffset;				  /*Calculate heigt to scroll */
-
-	        window.scrollBy({
-	            top: offsetPosition,
-	            behavior: 'smooth'
-	        })
+			calcAndScroll(href);
 		})
 	}
 }

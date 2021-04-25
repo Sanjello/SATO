@@ -1,13 +1,13 @@
 import mongoose from 'mongoose';
 
 const Post = new mongoose.Schema({
-  A: { type: String },
-  B: { type: String },
-  C: { type: String },
-  D: { type: String },
-  E: { type: String },
-  F: { type: String },
-  G: { type: String },
-  H: { type: String },
+  A: { type: Object },
+  B: { type: Object },
+  C: { type: Object },
+  D: { type: Object },
+  E: { type: Object },
+  F: { type: Object },
+  G: { type: Object },
+  H: { type: Object },
 });
 export default mongoose.model('Post', Post);

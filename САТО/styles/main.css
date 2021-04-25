@@ -734,11 +734,10 @@ section {
   font-weight: 500;
   font-size: 20px;
   line-height: 18px;
-  max-width: 380px;
   height: 80px;
-  background: #393E4680;
+  background-color: inherit;
   cursor: pointer;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 10px 10px 10px 0px;
 }
 .courses .tabs .tabs__nav .tabs__nav-btn.active {
   background-color: #4E4E53;
