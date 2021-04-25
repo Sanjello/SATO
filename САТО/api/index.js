@@ -1,6 +1,7 @@
 /* eslint-disable */
 /* For starting API server write text in console: npm run dev
-For run this command you need installed Node.js,npm */
+For run this command you need install Node.js,npm, then: express, mongoose, cors
+*/
 
 import express from 'express';
 import mongoose from 'mongoose';

@@ -680,6 +680,9 @@ section {
   /* Large desktops and laptops */
   /* End of mediaqueries*/
 }
+.courses .courses__container {
+  padding: 20px;
+}
 .courses .courses__container .courses__title {
   /* Landscape tablets and medium desktops */
   /* Portrait tablets and small desktops */
@@ -714,21 +717,16 @@ section {
     padding: 6% 0 0 0;
   }
 }
-.courses .content {
-  padding: 50px 0 0 0;
+.courses .tabs {
+  max-width: 100vw;
+  margin: 50px auto;
+}
+.courses .tabs .tabs__nav {
   display: flex;
   align-items: center;
-  text-align: center;
+  background: #323840;
 }
-.courses .content .tabs {
-  margin: 0 auto;
-}
-.courses .content .tabs__items {
-  display: flex;
-  align-items: center;
-}
-.courses .content .tabs__items .tabs__item {
-  border: 1px solid white;
+.courses .tabs .tabs__nav .tabs__nav-btn {
   color: #fff;
   text-decoration: none;
   padding: 15px 30px;
@@ -737,20 +735,30 @@ section {
   font-size: 20px;
   line-height: 18px;
   max-width: 380px;
-  height: 100%;
+  height: 80px;
+  background: #393E4680;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
 }
-.courses .content .tabs__body .tabs__block {
+.courses .tabs .tabs__nav .tabs__nav-btn.active {
+  background-color: #4E4E53;
+  color: #fff;
+}
+.courses .tabs .tabs__item {
   display: none;
 }
-.courses .content .tabs__body .tabs__block tr th {
+.courses .tabs .tabs__item tr th {
+  color: #fff;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
   height: 100px;
   border: none;
+  text-transform: uppercase;
+  background: #4e4e53;
 }
-.courses .content .tabs__body .tabs__block tr td {
+.courses .tabs .tabs__item tr td {
   color: #000;
   font-style: normal;
   font-weight: normal;
@@ -760,27 +768,11 @@ section {
   text-align: center;
   height: 110px;
   width: 190px;
+  background: #FFD369;
+  padding: 0 3px;
 }
-.courses .content .tabs__body .tabs__block:target {
+.courses .tabs .tabs__item.active {
   display: block;
-}
-.courses .content .tabs__body .tabs__block:nth-child(1):before {
-  background: #4e4e53;
-  height: 100px;
-  width: 100px;
-  left: 33.3333%;
-}
-.courses .content .tabs__body #tab_01 tr th {
-  background: #4e4e53;
-}
-.courses .content .tabs__body #tab_01 tr td {
-  background: #AEC0CA;
-}
-.courses .content .tabs__body #tab_02 tr th {
-  background: #4e4e53;
-}
-.courses .content .tabs__body #tab_02 tr td {
-  background: #FBD1B9;
 }
 
 /*------Slider----*/
@@ -1070,8 +1062,8 @@ section {
 
 /*------Robototechnics----*/
 .robototechnics {
-  background: url("../images/Robotechnics.svg") no-repeat top left/cover;
-  padding: 50px 0;
+  background: url("../images/Backgrounds/Robotechnics.svg") no-repeat top left/cover;
+  padding: 100px 0;
 }
 .robototechnics .robototechnics_inner {
   display: flex;
