@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const Post = new mongoose.Schema({
+const Sys_analiz_schema = new mongoose.Schema({
   A: { type: Object },
   B: { type: Object },
   C: { type: Object },
@@ -10,4 +10,4 @@ const Post = new mongoose.Schema({
   G: { type: Object },
   H: { type: Object },
 });
-export default mongoose.model('Post', Post);
+export default mongoose.model('Sys_analiz', Sys_analiz_schema);

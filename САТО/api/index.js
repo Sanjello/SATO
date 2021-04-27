@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(cors({
   origin: '*',
 }));
-app.use('/api', router);
+app.use('/api/courses', router);
 // eslint-disable-next-line
 app.listen(PORT, () => console.log('Listening on port  ' + PORT));
 

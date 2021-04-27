@@ -69,7 +69,7 @@
   }
 /* Func for get data from API*/
   function getCourses(){
-    return fetch("http://localhost:3000/api/courses")
+    return fetch("http://localhost:3000/api/courses/sys_analiz")
     .then((response=>{
       console.log(response);
       return response.json(response);
@@ -80,6 +80,7 @@
     let list = "";
     
     courses.forEach(course => {
+      console.log(course);
       if (course["_id"] =='60855fddf6bb872304d6ce77') {
         list += crateHeadRow(course);
       }
