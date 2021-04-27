@@ -14,6 +14,7 @@ window.onload=function(){
 
 	var top_button = document.querySelector(".section-top__btn a");
 	var buttons = document.querySelectorAll('.header__link');
+	var buttons_to_courses = document.querySelector(".sys_analiz");
 
 	/*-------------Scroll functions----------------*/
 
@@ -30,7 +31,7 @@ window.onload=function(){
 	                  /*More button*/
 	top_button.addEventListener("click",function(e){
 		e.preventDefault();
-		href = top_button.getAttribute("href").substring(1);
+		href = this.getAttribute("href").substring(1);
 	    calcAndScroll(href);
 	})
 	
@@ -45,4 +46,9 @@ window.onload=function(){
 			calcAndScroll(href);
 		})
 	}
+	buttons_to_courses.addEventListener("click",function(e){
+		e.preventDefault();
+		href = this.getAttribute("href").substring(1);
+	    calcAndScroll(href);
+	})
 }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
@@ -442,6 +443,10 @@ section {
   line-height: 28px;
   padding: 10% 0 10% 0;
 }
+.about-us .about-us__text a {
+  text-decoration: none;
+  color: #FFD369;
+}
 .about-us .details {
   font-size: 20px;
   line-height: 35px;
@@ -541,10 +546,9 @@ section {
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
-@media (min-width: 1200px) {
-  .history {
-    background: url("../images/Backgrounds/History.svg") no-repeat top left/cover;
-  }
+.history .history__container {
+  display: flex;
+  flex-direction: column;
 }
 .history .history__title {
   color: #FFD369;
@@ -559,7 +563,6 @@ section {
 @media (min-width: 1200px) {
   .history .history__title {
     font-size: 56px;
-    padding: 2% 0 0 15%;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -674,7 +677,7 @@ section {
 
 /*------Courses----*/
 .courses {
-  background: url("../images/Backgrounds/Courses.svg") no-repeat top left/cover;
+  font-family: "Roboto", sans-serif;
   /* Media queries for title*/
   color: #FFD369;
   /* Large desktops and laptops */
@@ -750,7 +753,7 @@ section {
   height: 80px;
   background-color: inherit;
   cursor: pointer;
-  border-radius: 10px 10px 10px 0px;
+  border-radius: 0px 10px 10px 0px;
 }
 @media (max-width: 900px) {
   .courses .tabs .tabs__nav .tabs__nav-btn {
@@ -770,6 +773,17 @@ section {
 .courses .tabs .tabs__nav .tabs__nav-btn.active {
   background-color: #4E4E53;
   color: #fff;
+}
+.courses .tabs .tabs__nav .tabs__nav-btn:nth-child(1) {
+  z-index: 6;
+}
+.courses .tabs .tabs__nav .tabs__nav-btn:nth-child(2) {
+  margin-left: -10px;
+  z-index: 5;
+}
+.courses .tabs .tabs__nav .tabs__nav-btn:nth-child(3) {
+  margin-left: -10px;
+  z-index: 4;
 }
 .courses .tabs .tabs__item {
   display: none;
@@ -1102,9 +1116,6 @@ section {
 /* Активная точка */
 /* Элемент точки */
 /*------Workers----*/
-.workers {
-  background: url("../images/Backgrounds/Workers.svg") no-repeat top left/cover;
-}
 .workers .worckers__title {
   padding-top: 1.5%;
   padding-left: 18%;

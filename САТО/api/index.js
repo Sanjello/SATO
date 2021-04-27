@@ -1,5 +1,6 @@
-/* eslint-disable */
-/* For starting API server write text in console: npm run dev
+
+/* 
+For starting API server write text in console: npm run dev
 For run this command you need install Node.js,npm, then: express, mongoose, cors
 */
 
@@ -8,7 +9,7 @@ import mongoose from 'mongoose';
 import router from './router.js';
 import cors from 'cors';
 const app = express();
-const DB_URL = 'mongodb://localhost:27017/SATO';
+const DB_URL = 'mongodb+srv://admin:adm@sato-cluster.4clpi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';//mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false
 const PORT = 3000;
 
 app.use(express.json());

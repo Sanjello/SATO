@@ -8,23 +8,23 @@ $max-font: 56px;
 /* end var */
 
 .history{
-	@media (min-width: 1200px){
-		background: url("../images/Backgrounds/History.svg")no-repeat top left/cover;
-	}
 	
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
-
+	.history__container{
+		display: flex;
+		flex-direction: column;
+	}
 	.history__title{
 		color: $yell;
 		font-weight: 700;
-
+		//margin: 0 auto;
 		/* Media queries for title*/
 		
 		/* Large desktops and laptops */
 		@media (min-width: 1200px){
 			font-size: $max-font;
-			padding: 2% 0 0 15%;
+			//padding: 2% 0 0 15%;
 		}
 		/* Landscape tablets and medium desktops */
 		@media (min-width: 992px) and (max-width: 1200px){
