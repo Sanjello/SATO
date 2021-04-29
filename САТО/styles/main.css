@@ -88,7 +88,6 @@ section {
 }
 
 .section-top {
-  z-index: 1;
   background: url("../images/Backgrounds/top.svg") no-repeat center top/cover;
   display: flex;
   text-align: center;
@@ -678,6 +677,7 @@ section {
 /*------Courses----*/
 .courses {
   font-family: "Roboto", sans-serif;
+  background: url("/images/Backgrounds/Courses.svg") top left/cover;
   /* Media queries for title*/
   color: #FFD369;
   /* Large desktops and laptops */
@@ -749,8 +749,8 @@ section {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 18px;
-  height: 80px;
+  line-height: 25px;
+  height: 100px;
   background-color: inherit;
   cursor: pointer;
   border-radius: 0px 10px 10px 0px;
@@ -764,8 +764,6 @@ section {
 }
 @media (max-width: 760px) {
   .courses .tabs .tabs__nav .tabs__nav-btn {
-    font-size: 16px;
-    line-height: 17px;
     height: 120px;
     max-width: 250px;
   }
@@ -809,7 +807,7 @@ section {
   text-align: center;
   height: 110px;
   width: 190px;
-  padding: 0 3px;
+  padding: 7px;
 }
 .courses .tabs .tabs__item.active {
   display: block;

@@ -1,11 +1,11 @@
-/* eslint-disable */
-import Sys_analiz_schema from "./Sys_analiz_schema.js";
+
+import SystemAnalizSchema from "./SystemAnalizSchema.js";
  
-class Sys_analiz_controller{
+class SystemAnalizController{
     async create (req, res){
         try {
             const { A, B, C, D, E, F, G, H } = req.body;
-            const post = await Sys_analiz_schema.create({ A, B, C, D, E, F, G, H });
+            const post = await SystemAnalizSchema.create({ A, B, C, D, E, F, G, H });
             res.json(post);
           } catch (e) {
             res.status(500).json(e);
@@ -13,7 +13,7 @@ class Sys_analiz_controller{
     }
     async getAll(req,res) {
         try {
-            const posts = await Sys_analiz_schema.find();
+            const posts = await SystemAnalizSchema.find();
             return res.json(posts);
         } catch (e) {
             res.status(500).json(e);
@@ -25,7 +25,7 @@ class Sys_analiz_controller{
             if (!id){
                 res.status(400).json({massage:"id not defined"})
             }
-            const post = await Sys_analiz_schema.findById(id);
+            const post = await SystemAnalizSchema.findById(id);
             return res.json(post);
         } catch (e) {
             res.status(500).json(e);
@@ -37,7 +37,7 @@ class Sys_analiz_controller{
             if (!post._id){
                 req.status(400).json({massage:"id not defined"})
             }
-            const updatedPost = await Sys_analiz_schema.findByIdAndUpdate(Sys_analiz_schema._id,Sys_analiz_schema,{new:true})
+            const updatedPost = await SystemAnalizSchema.findByIdAndUpdate(SystemAnalizSchema._id,SystemAnalizSchema,{new:true})
             return res.json(updatedPost);
         } catch (e) {
             res.status(500).json(e);
@@ -49,11 +49,11 @@ class Sys_analiz_controller{
             if (!id){
                 res.status(400).json({massage:"id not defined"})
             }
-            const post = await Sys_analiz_schema.findByIdAndDelete(id);
+            const post = await SystemAnalizSchema.findByIdAndDelete(id);
             return res.json(post);
         } catch (e) {
             res.status(500).json(e);
         }
     }
 }
-export default new Sys_analiz_controller;
+export default new SystemAnalizController;

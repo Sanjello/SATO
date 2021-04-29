@@ -1,7 +1,10 @@
 
 /* 
+
 For starting API server write text in console: npm run dev
-For run this command you need install Node.js,npm, then: express, mongoose, cors
+For run this command you need download Nodejs, 
+npm and write npm install in api directory.
+
 */
 
 import express from 'express';
@@ -9,7 +12,7 @@ import mongoose from 'mongoose';
 import router from './router.js';
 import cors from 'cors';
 const app = express();
-const DB_URL = 'mongodb+srv://admin:adm@sato-cluster.4clpi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';//mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false
+const DB_URL = 'mongodb+srv://admin:adm@sato-cluster.4clpi.mongodb.net/SATO?retryWrites=true&w=majority';
 const PORT = 3000;
 
 app.use(express.json());

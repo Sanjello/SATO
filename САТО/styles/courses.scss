@@ -3,6 +3,7 @@ $yell: #FFD369;
 $max-font: 56px;
 .courses{
 	font-family: 'Roboto', sans-serif;
+	background: url('/images/Backgrounds/Courses.svg')top left /cover;
 	.courses__container{
 		padding: 20px;
 		.courses__header{
@@ -61,8 +62,8 @@ $max-font: 56px;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 20px;
-				line-height: 18px;
-				height: 80px;
+				line-height: 25px;
+				height: 100px;
 				background-color: inherit;
     			cursor: pointer;
 				border-radius: 0px 10px 10px 0px;
@@ -72,8 +73,6 @@ $max-font: 56px;
 					height: 60px;
 				}
 				@media (max-width:760px) {
-					font-size: 16px;
-					line-height: 17px;
 					height: 120px;
 					max-width: 250px;
 				}
@@ -122,7 +121,7 @@ $max-font: 56px;
 					height: 110px;
 					width: 190px;
 
-					padding: 0 3px;
+					padding: 7px;
 				}
 			}	
 			&.active{

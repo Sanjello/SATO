@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const Sys_analiz_schema = new mongoose.Schema({
+const MagistrSchema = new mongoose.Schema({
   A: { type: Object },
   B: { type: Object },
   C: { type: Object },
@@ -10,4 +10,4 @@ const Sys_analiz_schema = new mongoose.Schema({
   G: { type: Object },
   H: { type: Object },
 });
-export default mongoose.model('Sys_analiz', Sys_analiz_schema);
+export default mongoose.model('Magistr', MagistrSchema);

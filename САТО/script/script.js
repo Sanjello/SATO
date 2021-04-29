@@ -67,30 +67,73 @@
       return data["text"];
     }
   }
-/* Func for get data from API*/
-  function getCourses(){
-    return fetch("http://localhost:3000/api/courses/sys_analiz")
+/* Functins for get data from API*/
+function getMagistr(){
+  return fetch("http://localhost:3000/api/courses/magistr")
+  .then((response=>{
+    return response.json(response);
+  }));
+}
+  function getSystemAnaliz(){
+    return fetch("http://localhost:3000/api/courses/systemAnaliz")
     .then((response=>{
-      console.log(response);
+      return response.json(response);
+    }));
+  }
+  function getAnalizDanux(){
+    return fetch("http://localhost:3000/api/courses/analizDanux")
+    .then((response=>{
       return response.json(response);
     }));
   }
 /* Func for create table of courses*/
-  getCourses().then(courses=>{
+  getMagistr().then(courses=>{
     let list = "";
     
     courses.forEach(course => {
       console.log(course);
-      if (course["_id"] =='60855fddf6bb872304d6ce77') {
+      if (course["_id"] =='608aabea2fdb3f1ba8ed5151') {
         list += crateHeadRow(course);
       }
     });
     courses.forEach(course => {
-      if (course["_id"] !='60855fddf6bb872304d6ce77') {
+      if (course["_id"] !='608aabea2fdb3f1ba8ed5151') {
         list += crateRow(course);
       }
     });
-    $(".tabs__item").html(list);
+    $("#tab_3").html(list);
+  })
+  getSystemAnaliz().then(courses=>{
+    let list = "";
+    
+    courses.forEach(course => {
+      console.log(course);
+      if (course["_id"] =='6089be24b506e11fd4150664') {
+        list += crateHeadRow(course);
+      }
+    });
+    courses.forEach(course => {
+      if (course["_id"] !='6089be24b506e11fd4150664') {
+        list += crateRow(course);
+      }
+    });
+    $("#tab_2").html(list);
+  })
+  getAnalizDanux().then(courses=>{
+    let list = "";
+    
+    courses.forEach(course => {
+      console.log(course);
+      if (course["_id"] =='6089a51a8d1cbb23fc19cefa') {
+        list += crateHeadRow(course);
+      }
+    });
+    courses.forEach(course => {
+      if (course["_id"] !='6089a51a8d1cbb23fc19cefa') {
+        list += crateRow(course);
+      }
+    });
+    $("#tab_1").html(list);
   })
   const tabsBtn   = document.querySelectorAll(".tabs__nav-btn");
   const tabsItems = document.querySelectorAll(".tabs__item");
