@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body> 
  	<div class="wrapper">
@@ -131,7 +132,8 @@
 					ІСТОРІЯ
 				</h1>
 				<div class="history__text-container">
-					<div class="history__text">
+					<div class="history__text" id="history1">
+						<i class="fas fa-circle"></i>
 						Як підрозділ фізико-математичного, згодом математичного факультету Ужгородського 
 						університету, кафедру обчислювальної математики було створено у 1963 році. 
 						Її очолив к. ф.-м. н., доцент Сірик Г.В., а в 1973 році - д. ф.-м. н., професор 
@@ -141,6 +143,14 @@
 						напрямок кафедри в подальшому.
 					</div>
 					<div class="history__text">
+						<i class="fas fa-circle"></i>
+						Кафедра підтримує тісні зв’язки з провідними вузами країни, зокрема Київським та Львівським 
+						національними університетами, Інститутом кібернетики імені Глушкова НАН України, співпрацює з 
+						спеціалістами вузів Європи і США. На сьогодні до складу кафедри входять  штатних 8 співробітників, 
+						з яких 6 доцентів, 1 старший викладач, 1 викладач та 1 сумісник - старший викладач.
+					</div>
+					<div class="history__text">
+						<i class="fas fa-circle"></i>
 						У 2000 році кафедру обчислювальної математики перейменовано на кафедру системного аналізу 
 						і теорії оптимізації. На даний час науково-дослідна робота ведеться в напрямках моделювання 
 						та дослідження моделей дискретної, багатокритеріальної, лексикографічної оптимізації, теорії 
@@ -148,13 +158,8 @@
 						задач механіки, математичної фізики, відшукання екстремуму негладких і розривних функцій двох 
 						та багатьох  дійсних змінних.
 					</div>
-					<div class="history__text">
-						Кафедра підтримує тісні зв’язки з провідними вузами країни, зокрема Київським та Львівським 
-						національними університетами, Інститутом кібернетики імені Глушкова НАН України, співпрацює з 
-						спеціалістами вузів Європи і США. На сьогодні до складу кафедри входять  штатних 8 співробітників, 
-						з яких 6 доцентів, 1 старший викладач, 1 викладач та 1 сумісник - старший викладач.
-					</div>
-					<div class="history__text">
+					<div class="history__text" id="history4">
+						<i class="fas fa-circle"></i>
 						Науково-педагогічним колективом кафедри на математичному факультеті забезпечується читання загальних 
 						курсів для спеціальностей «Середня освіта (математика)», «Математика», «Прикладна математика», 
 						«Системний аналіз», «Статистика» та спеціальних курсів для двох спеціалізацій кафедри: 
@@ -162,7 +167,8 @@
 					</div>
 				</div>
 				<p class="history__text text">
-					При кафедрі працюють два гуртки: «Робототехніка», «Розв’язування олімпіадних задач з інформатики».
+					
+					При кафедрі працюють два гуртки: «Робототехніка» та «Спортивне програмування».
 				</p>
 				<div class="history__photo-container">
 					<img src="images/History-photos/history1.svg" alt="" class="history__photo-item">
@@ -461,7 +467,7 @@
 		<!--------Section-robototechnics---------->
 		<section class="robototechnics">
 			<div class="robototechnics_inner">
-				<h2 class="robototechnics_head">Роботехніка</h2>
+				<h2 class="robototechnics_head">Робототехніка</h2>
 				<p class="robototechnics_inner_text">На математичному факультеті функціонує гурток із робототехніки. Вже зараз 
 				тутешні студенти зможуть вивчати особливості програмування роботів. Студенти вже створювали робота,
 				який грає в "хрестики-нолики" з користувачем. Безпосередньо результатами проходження курсу є вивчення 
@@ -490,6 +496,58 @@
 			</div><!--/sport_programming__wrapper-->
 		</section>
 		<!-- /section-sport_programming-->
+		<footer class="footer">
+			<div class="footer__map">
+				<span>Ми на карті</span>
+				<hr>
+				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%BD%D0%B8%D0%B9%20%D1%84%D0%B0%D0%BA%D1%83%D0%BB%D1%8C%D1%82%D0%B5%D1%82%20%D1%83%D0%B6%D0%BD%D1%83&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" ></iframe>
+			</div>
+			<div class="footer__contacts">
+				<span class="contacts__title">Контактна інформація</span>
+				<hr>
+				<div class="footer__kafedra">
+					<p> Кафедра:<br>
+						Адреса: Україна, м. Ужгород, <br>
+						вул. Універитетська, 14, кім. 332 
+						<br>
+						Телефон: <span>098-778-31-94 (Viber, Telegram)</span>
+						<br>
+						E-mail: <span>kaf-sysanaliz@uzhnu.edu.ua</span>
+						
+					</p>
+				</div>
+				<div class="footer__uni">
+					<p> Приймальна комісія: <br>
+						Адреса: 88000, Україна, Закарпатська обл., м. Ужгород, <br> вул. Університетська, 14, кімн. 228 <br>
+						Телефон: <span>066-829-35-38, 096-123-89-67, 063-641-66-45</span>  <br>
+						E-mail: <span>admission@uzhnu.edu.ua</span> 
+					</p>
+				</div>
+				
+			</div>
+			<div class="footer__socialmedia">
+				<div class="social">
+					<span class="socialmedia__title">Ми в соцмережах</span>
+					<hr>
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+				</div>
+				<div class="other-pages">
+					<span class="socialmedia__title">Посилання на інші сторінки</span>
+					<hr>
+					<a href="#">
+						<img src="./images/uzhnu_logo.svg" alt="">
+					</a>
+				</div>
+				<br>
+				<p class="copywright">© 2021 Усі права захищено</p>
+			</div>
+			
+		</footer>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="script/slick.min.js"></script>
 	<script type="text/javascript" src="script/script.js"></script>

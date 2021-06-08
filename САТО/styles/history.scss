@@ -47,18 +47,54 @@ $max-font: 56px;
 	.history__text-container{
 		display: grid;
 		margin-top: 8%;
-
 		/* Large desktops and laptops */
 		@media (min-width: 1200px) {
 			grid-template-columns: 1fr 1fr;
 			column-gap: 8%;
+			.history__text{
+				font-size: 14px;
+				padding: 30px;
+				text-align: justify;
+				background-color: rgb(45, 56, 63);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}
+			}
+			#history1 {
+				background-color: rgb(53, 70, 80);
+			}
+			#history4 {
+				background-color: rgb(53, 70, 80);
+			}
 		}
 		/* Landscape tablets and medium desktops */
 		@media (min-width: 992px) and (max-width: 1200px){
 			grid-template-columns: 1fr 1fr;
-			column-gap: 8%;
+			column-gap: 4%;
 			.history__text{
 				font-size: 14px;
+				padding: 30px;
+				text-align: justify;
+				background-color: rgb(45, 56, 63);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}
+			}
+			#history1 {
+				background-color: rgb(53, 70, 80);
+			}
+			#history4 {
+				background-color: rgb(53, 70, 80);
 			}
 		}
 		/* Portrait tablets and small desktops */
@@ -66,12 +102,39 @@ $max-font: 56px;
 			grid-template-columns: 1fr;
 			.history__text{
 				line-height: 30px;
-				padding: 4% 0;
+				padding: 30px;
+
+				text-align: justify;
+				background-color: rgb(53, 70, 80);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}	
 			}
 		}
 		/* Landscape phones and portrait tablets */
 		@media (max-width: 768px) {
 			grid-template-columns: 1fr;
+			.history__text{
+				line-height: 30px;
+				padding: 30px;
+				font-size: 15px;
+
+				text-align: justify;
+				background-color: rgb(53, 70, 80);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}	
+			}
 		}
 		
 	}
