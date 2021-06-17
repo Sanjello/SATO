@@ -714,36 +714,14 @@ const magistr = [
     }
     ]
 /* -----------------Courses------------------- */
-let list = '';
-analiz_danux.forEach(course=>{
-  if(course['_id']=='6089a51a8d1cbb23fc19cefa'){
-    list += crateHeadRow(course);
-  }
-  if(course["_id"] !='6089a51a8d1cbb23fc19cefa'){
-    list += crateRow(course);
-  }
-  $("#tab_1").html(list);
-})
-list = '';
-system_analiz.forEach(course=>{
-  if(course['_id']=='6089be24b506e11fd4150664'){
-    list += crateHeadRow(course);
-  }
-  if(course["_id"] !='6089be24b506e11fd4150664'){
-    list += crateRow(course);
-  }
-  $("#tab_2").html(list);
-})
-list = '';
-magistr.forEach(course=>{
-  if(course['_id']=='608aabea2fdb3f1ba8ed5151'){
-    list += crateHeadRow(course);
-  }
-  if(course["_id"] !='608aabea2fdb3f1ba8ed5151'){
-    list += crateRow(course);
-  }
-  $("#tab_3").html(list);
-})
+
+createTable('6089a51a8d1cbb23fc19cefa',analiz_danux,"#tab_1");
+createTable('6089be24b506e11fd4150664',system_analiz,"#tab_2");
+createTable('608aabea2fdb3f1ba8ed5151',magistr,"#tab_3");
+
+
+
+
 function crateHeadRow(row){
   let list = `<tr>
     <th>${checkUndefinedText(row["A"])}</th>
@@ -791,4 +769,18 @@ function checkUndefinedText(data){
     return data["text"];
   }
 }
+
+function createTable(id,array,tab){
+  let list ='';
+  array.forEach(course=>{
+    if(course['_id']==id){
+      list += crateHeadRow(course);
+    }
+    if(course["_id"] !=id){
+      list += crateRow(course);
+    }
+    $(tab).html(list);
+  })
+}
+
 
