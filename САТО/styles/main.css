@@ -206,6 +206,7 @@ section {
   left: 0;
   top: 0;
   z-index: 50;
+  font-family: "Raleway";
 }
 .header.scrolled {
   background: rgba(15, 16, 20, 0.97);
@@ -253,12 +254,13 @@ section {
 }
 .header .header__body .header__li {
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 20px 15px;
   border: 1px solid rgba(0, 0, 0, 0);
+  transition: 0.5s;
 }
-@media (max-width: 1235px) {
+@media (max-width: 1140px) {
   .header .header__body .header__li {
-    padding: 10px 15px;
+    padding: 10px 10px;
   }
 }
 .header .header__body .header__li:hover {
@@ -271,13 +273,18 @@ section {
 }
 .header .header__body .header__li .header__link {
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
 }
 @media (max-width: 1480px) {
   .header .header__body .header__li .header__link {
     font-size: 18px;
     line-height: 22px;
+  }
+}
+@media (max-width: 1140px) {
+  .header .header__body .header__li .header__link {
+    font-size: 16px;
   }
 }
 
@@ -347,25 +354,31 @@ section {
     transition-property: bottom, transform;
   }
   .toggle-burger.toggle-burger__animx.is-active + .header__menu {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     z-index: 5;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100vh;
     background: rgba(34, 40, 49, 0.95);
   }
   .toggle-burger.toggle-burger__animx.is-active + .header__menu .header__ul {
-    margin-top: 50%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
+    display: block;
+    text-align: center;
     font-size: 30px;
+    max-width: 100%;
   }
   .toggle-burger.toggle-burger__animx.is-active + .header__menu .header__ul .header__li {
     border-bottom: 1px solid #ffd369;
+    padding: 10px 0;
+  }
+  .toggle-burger.toggle-burger__animx.is-active + .header__menu .header__ul .header__link {
+    font-size: 4vh;
   }
   .toggle-burger.toggle-burger__animx.is-active span {
     background: none;
