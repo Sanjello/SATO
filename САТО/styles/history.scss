@@ -8,13 +8,20 @@ $max-font: 56px;
 /* end var */
 
 .history{
-	
 	font-family: 'Roboto', sans-serif;
 	color: #fff;
 	.history__container{
 		display: flex;
 		flex-direction: column;
 	}
+	.history_link {
+		color:#FFD369;
+		text-decoration: none;
+		&:hover{
+			color: rgb(248, 219, 152);
+		}
+	}
+	
 	.history__title{
 		color: $yell;
 		font-weight: 700;
@@ -64,6 +71,7 @@ $max-font: 56px;
 					font-size: 20px;
 					margin: 5px;
 				}
+				
 			}
 			#history1 {
 				background-color: rgb(53, 70, 80);

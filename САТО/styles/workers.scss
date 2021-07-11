@@ -1,25 +1,12 @@
 $yell: #FFD369;
 .workers{
 	.worckers__title{
-		padding-top: 1.5%;
-		padding-left: 18%;
-		font-size: 56px;
-		line-height: 50px;
-		color:$yell;
-		font-style: 'Montserrat';
-		@media (max-width: 1700px){
-			padding-left: 35%;
-		}
-		@media (max-width: 1400px){
-			padding-left: 32%;
-		}
-		@media (max-width: 1050px){
-			padding-top: 7.5%;
-		}
-		@media (max-width:730px) {
-			font-size: 40px;
-			padding-left: 17%;
-		}
+		font-family: 'Roboto', sans-serif;
+		color: #FFD369;
+		font-weight: 700;
+		font-size: 30px;
+    	text-align: center;
+		
 		@media (max-width: 520px) {
 			font-size: 26px;
 		}
