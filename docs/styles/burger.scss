@@ -1,0 +1,131 @@
+/* some SCSS variables */
+$animx-color: #FFD369;
+$check-color: #32dc64;
+$button-width: 50px;              // The width of the button area
+$button-height: 50px;               // The height of the button area
+$bar-thickness: 2px;               // The thickness of the button bars
+$button-pad: 10px;                // The left/right padding between button area and bars.
+$button-bar-space: 10px;        // The spacing between button bars
+$button-transistion-duration: 0.3s;  // The transition duration
+/* end var */
+@media (max-width: 990px){
+	.header__end{
+		display: none;
+	}
+  	.toggle-burger{
+  		& + .header__menu{
+  			display: none;
+  		}
+
+  		z-index: 6;
+	  	display: block;
+	  	position: relative;
+		width: $button-width;
+		height: $button-height;
+		cursor: pointer;
+		transition: background $button-transistion-duration;
+		&:focus{
+			outline: none;
+		}
+		span{
+			display: block;
+		    position: absolute;
+		    top: ($button-height / 2) - ($bar-thickness / 2);
+		    left: $button-pad;
+		    right: $button-pad;
+		    height: $bar-thickness;
+		    background: $animx-color;
+		    &::before,
+		    &::after{
+		    	position: absolute;
+		      	display: block;
+		      	left: 0;
+		      	width: 100%;
+		      	height: $bar-thickness;
+		      	background-color: $animx-color;
+		      	content: "";
+		    }
+		      
+		    &::before{
+		      top: -$bar-thickness - $button-bar-space;
+		    }
+		    &::after{
+		      bottom: -$bar-thickness - $button-bar-space;
+		    }
+		}
+		    
+
+		  /* --- animate to X --- */
+		&.toggle-burger__animx{
+		    span{
+
+		    	z-index: 100;
+		    	transition: background 0s $button-transistion-duration;
+		      	&::before,
+		      	&::after{
+		      		transition-duration: $button-transistion-duration, $button-transistion-duration;
+		        	transition-delay: $button-transistion-duration, 0s;
+		      	}
+		      	&::before{
+		        	transition-property: top, \transform;
+		      	}
+		      	&::after{
+		        	transition-property: bottom, \transform;
+		      	}
+		    }
+		      
+		    /* when menu open: */
+		    &.is-active{
+				& + .header__menu{
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					z-index: 5;
+					position: fixed;
+					top: 0;
+					left:  0;
+					height: 100%;
+					width: 100%;
+					max-width: 100vw;
+					max-height: 100vh;
+					background: rgba(34, 40, 49,0.95);
+					.header__ul{
+						display: block;
+						text-align: center;
+						font-size: 30px;
+						max-width:100% ;
+						.header__li{
+							border-bottom: 1px solid rgb(255, 211, 105);
+							padding: 10px 0;
+						}
+						.header__link{
+							font-size: 4vh;
+						}
+					}
+				}
+
+		    	span{
+		    		
+		    		background: none;
+		    		z-index: 100;
+		        	&::before,
+		        	&::after{
+		        		background-color: darken($animx-color, 25%);
+		          		transition-delay: 0s, $button-transistion-duration;
+		        	}
+		        	&::before{
+		        		top: 0;
+		          		transform: rotate(45deg);
+		        	}
+		        	&::after{
+		        		bottom: 0;
+		          		transform: rotate(-45deg);
+		        	}	
+		    	}		        
+		    }     
+		}    	  
+  	}      
+}
+
+/* button starting stylings ------------------------------- */
+

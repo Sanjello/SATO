@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* some SCSS variables */
+
+$yell: #FFD369;
+$max-font: 56px;
+
+/* end var */
+
+.history{
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	.history__container{
+		display: flex;
+		flex-direction: column;
+	}
+	.history_link {
+		color:#FFD369;
+		text-decoration: none;
+		&:hover{
+			color: rgb(248, 219, 152);
+		}
+	}
+	
+	.history__title{
+		color: $yell;
+		font-weight: 700;
+		//margin: 0 auto;
+		/* Media queries for title*/
+		
+		/* Large desktops and laptops */
+		@media (min-width: 1200px){
+			font-size: $max-font;
+			//padding: 2% 0 0 15%;
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			font-size: $max-font;
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			font-size: 36px;
+			text-align: center;
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			font-size: 30px;
+			text-align: center;
+		}
+		/* End of mediaqueries*/
+		
+	}
+
+	.history__text-container{
+		display: grid;
+		margin-top: 8%;
+		/* Large desktops and laptops */
+		@media (min-width: 1200px) {
+			grid-template-columns: 1fr 1fr;
+			column-gap: 8%;
+			.history__text{
+				font-size: 14px;
+				padding: 30px;
+				text-align: justify;
+				background-color: rgb(45, 56, 63);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}
+				
+			}
+			#history1 {
+				background-color: rgb(53, 70, 80);
+			}
+			#history4 {
+				background-color: rgb(53, 70, 80);
+			}
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			grid-template-columns: 1fr 1fr;
+			column-gap: 4%;
+			.history__text{
+				font-size: 14px;
+				padding: 30px;
+				text-align: justify;
+				background-color: rgb(45, 56, 63);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}
+			}
+			#history1 {
+				background-color: rgb(53, 70, 80);
+			}
+			#history4 {
+				background-color: rgb(53, 70, 80);
+			}
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			grid-template-columns: 1fr;
+			.history__text{
+				line-height: 30px;
+				padding: 30px;
+
+				text-align: justify;
+				background-color: rgb(53, 70, 80);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}	
+			}
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			grid-template-columns: 1fr;
+			.history__text{
+				line-height: 30px;
+				padding: 30px;
+				font-size: 15px;
+
+				text-align: justify;
+				background-color: rgb(53, 70, 80);
+				border-radius: 10px;
+				margin-top: 15px;
+				box-shadow: 0 0 10px rgba(22, 24, 0, 0.5);
+				i {
+					color:#FFD369;
+					font-size: 20px;
+					margin: 5px;
+				}	
+			}
+		}
+		
+	}
+	.history__text{
+		text-align: center;
+		font-size: 18px;
+		line-height: 21px;	
+		padding: 0% 0;
+		// overflow: hidden;
+		.more-text {
+			display: none;
+			opacity: 0;
+			
+		}
+
+		.show-more .more-text{
+			display: block;
+			opacity: 1;
+			transition: all 0.5s;
+		}
+		.read-more-btn {
+			background-color: transparent;
+			color: $yell;
+			font-style: italic;
+		}
+	}
+
+	.text{
+		padding: 8% ;
+		width: fit-content;
+	}
+
+	.history__photo-container{
+		display: flex;
+		justify-items: center;
+		
+		/* Large desktops and laptops */
+		@media (min-width: 1200px){
+			justify-content: space-evenly;
+		}
+		/* Landscape tablets and medium desktops */
+		@media (min-width: 992px) and (max-width: 1200px){
+			justify-content: space-evenly;
+			.history__photo-item{
+				width: 360px;
+			}
+		}
+		/* Portrait tablets and small desktops */
+		@media (min-width: 768px) and (max-width: 992px){
+			flex-direction: column;
+			.history__photo-item{
+				display: block;
+				align-self: center;
+				width: 560px;
+				padding: 5%;
+			}
+		}
+		/* Landscape phones and portrait tablets */
+		@media (max-width: 768px) {
+			flex-direction: column;
+			.history__photo-item{
+				padding: 2%;;
+				display: block;
+				width: 300px;
+				align-self: center;
+			}
+		}
+	}
+}
+
+

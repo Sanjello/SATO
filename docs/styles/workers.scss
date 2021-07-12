@@ -1,0 +1,14 @@
+$yell: #FFD369;
+.workers{
+	.worckers__title{
+		font-family: 'Roboto', sans-serif;
+		color: #FFD369;
+		font-weight: 700;
+		font-size: 30px;
+    	text-align: center;
+		
+		@media (max-width: 520px) {
+			font-size: 26px;
+		}
+	}
+}
