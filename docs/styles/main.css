@@ -710,7 +710,7 @@ section {
   display: none;
   opacity: 0;
 }
-.history .history__text .show-more .more-text {
+.history .history__text .show-more {
   display: block;
   opacity: 1;
   transition: all 0.5s;
