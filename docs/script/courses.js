@@ -770,7 +770,7 @@ const magistr = [
     },
     ]
 /* -----------------Courses------------------- */
-
+ 
 createTable('6089a51a8d1cbb23fc19cefa',analiz_danux,"#tab_1");
 createTable('6089be24b506e11fd4150664',system_analiz,"#tab_2");
 createTable('608aabea2fdb3f1ba8ed5151',magistr,"#tab_3");
