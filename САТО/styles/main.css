@@ -562,6 +562,13 @@ section {
   display: flex;
   flex-direction: column;
 }
+.history .history_link {
+  color: #FFD369;
+  text-decoration: none;
+}
+.history .history_link:hover {
+  color: #f8db98;
+}
 .history .history__title {
   color: #FFD369;
   font-weight: 700;
@@ -752,7 +759,6 @@ section {
 /*------Courses----*/
 .courses {
   font-family: "Roboto", sans-serif;
-  background: url("/images/Backgrounds/Courses.svg") top left/cover;
   /* Media queries for title*/
   color: #FFD369;
   /* Large desktops and laptops */
@@ -1208,33 +1214,11 @@ section {
 /* Элемент точки */
 /*------Workers----*/
 .workers .worckers__title {
-  padding-top: 1.5%;
-  padding-left: 18%;
-  font-size: 56px;
-  line-height: 50px;
+  font-family: "Roboto", sans-serif;
   color: #FFD369;
-  font-style: "Montserrat";
-}
-@media (max-width: 1700px) {
-  .workers .worckers__title {
-    padding-left: 35%;
-  }
-}
-@media (max-width: 1400px) {
-  .workers .worckers__title {
-    padding-left: 32%;
-  }
-}
-@media (max-width: 1050px) {
-  .workers .worckers__title {
-    padding-top: 7.5%;
-  }
-}
-@media (max-width: 730px) {
-  .workers .worckers__title {
-    font-size: 40px;
-    padding-left: 17%;
-  }
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
 }
 @media (max-width: 520px) {
   .workers .worckers__title {
@@ -1245,12 +1229,11 @@ section {
 /*------Robototechnics----*/
 .robototechnics {
   width: 100%;
-  background: url("../images/Backgrounds/Robotechnics.svg") no-repeat top left/cover;
   padding: 100px 10px;
 }
 @media (max-width: 950px) {
   .robototechnics {
-    padding: 150px 10px;
+    padding: 50px 10px;
   }
 }
 .robototechnics .robototechnics_inner {
@@ -1266,7 +1249,7 @@ section {
 .robototechnics .robototechnics_head {
   font-size: 56px;
   line-height: 56px;
-  font-style: "Montserrat";
+  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
   color: #FFD369;
   margin: 20px 0;
@@ -1325,11 +1308,11 @@ section {
 /*------Sport programming-----*/
 .sport_programming {
   width: 100%;
-  padding: 100px 10px;
+  padding: 0px 10px;
 }
 @media (max-width: 950px) {
   .sport_programming {
-    padding: 150px 10px;
+    padding: 0px 10px;
   }
 }
 .sport_programming .sport_programming__wrapper {
@@ -1345,7 +1328,7 @@ section {
 .sport_programming .sport_programming__head {
   font-size: 56px;
   line-height: 56px;
-  font-style: "Montserrat";
+  font-family: "Roboto", sans-serif;
   padding-bottom: 20px;
   color: #FFD369;
   margin: 20px 0;
