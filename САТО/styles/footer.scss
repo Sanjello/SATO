@@ -17,6 +17,14 @@
         width: 15%;
         margin: 10px 0 10px 0;
     }
+    a {
+        color: $yell;
+        &:hover{
+            color: #fff;
+            transition: all 1s;
+        }
+    }
+    
 }
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
