@@ -704,7 +704,21 @@ section {
   text-align: center;
   font-size: 18px;
   line-height: 21px;
-  padding: 8% 0;
+  padding: 0% 0;
+}
+.history .history__text .more-text {
+  display: none;
+  opacity: 0;
+}
+.history .history__text .show-more .more-text {
+  display: block;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.history .history__text .read-more-btn {
+  background-color: transparent;
+  color: #FFD369;
+  font-style: italic;
 }
 .history .text {
   padding: 8%;
