@@ -604,6 +604,7 @@ section {
 .history .history__text-container {
   display: grid;
   margin-top: 8%;
+  align-items: flex-start;
   /* Large desktops and laptops */
   /* Landscape tablets and medium desktops */
   /* Portrait tablets and small desktops */
@@ -708,12 +709,14 @@ section {
 }
 .history .history__text .more-text {
   display: none;
-  opacity: 0;
+}
+.history .history__text .text-gradient {
+  background: linear-gradient(180deg, white 61%, rgba(255, 255, 255, 0.0009045855) 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .history .history__text .show-more .more-text {
   display: block;
-  opacity: 1;
-  transition: all 0.5s;
 }
 .history .history__text .read-more-btn {
   background-color: transparent;
@@ -1231,8 +1234,9 @@ section {
   font-family: "Roboto", sans-serif;
   color: #FFD369;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 56px;
   text-align: center;
+  margin-top: 5%;
 }
 @media (max-width: 520px) {
   .workers .worckers__title {
