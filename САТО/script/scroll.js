@@ -1,4 +1,5 @@
-window.onload=function(){
+
+document.onload=function(){
 
 	window.addEventListener("scroll",function(){
 
