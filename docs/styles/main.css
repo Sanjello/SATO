@@ -93,7 +93,7 @@ section {
   transition: 1s all;
   opacity: 1;
   visibility: visible;
-  background: url(./../images/awesome_duck.gif) center no-repeat;
+  background: url(./../images/walking_man.gif) center no-repeat;
   background-color: #000;
 }
 .preloader .loader {
@@ -321,12 +321,17 @@ section {
   position: relative;
   color: #fff;
 }
-.header .header__body .header__end a {
+.header .header__body .header__end .header__link {
   text-decoration: none;
   font-family: "Raleway";
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 22px;
   color: #fff;
+}
+@media (max-width: 1140px) {
+  .header .header__body .header__end .header__link {
+    font-size: 16px;
+  }
 }
 .header .header__body .header__end:hover ul {
   display: block;

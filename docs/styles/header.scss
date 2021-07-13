@@ -81,12 +81,15 @@ $dark:#222831;
 		.header__end{
 			position: relative;
 			color:#fff;
-			a{
+			.header__link{
 				text-decoration: none;
 				font-family: "Raleway";
-				font-size: 20px;
-				line-height: 28px;
-				color:#fff
+				font-size: 18px;
+				line-height: 22px;
+				color:#fff;
+				@media (max-width:1140px) {
+					font-size: 16px;
+				}
 			}
 			&:hover ul{
 				display: block;
