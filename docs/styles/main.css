@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;1,300&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -1382,7 +1379,7 @@ section {
   background-color: white;
   max-width: 1200px;
   padding: 5% 10%;
-  margin: 0 auto;
+  margin: 0 auto 5% auto;
 }
 .sport_programming .sport_programming__head {
   font-size: 56px;
