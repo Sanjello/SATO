@@ -1,9 +1,15 @@
 (function() {
 
   "use strict";
-/* -----------------Navigation------------------- */
+
+/*---------------Variables-------------- */
+
   var toggles = document.querySelectorAll(".toggle-burger");
-  var tabs =  document.querySelectorAll(".tabs__item");
+  const tabsBtn   = document.querySelectorAll(".tabs__nav-btn");
+  const tabsItems = document.querySelectorAll(".tabs__item");
+
+/*---------------Functions-------------- */
+/* -----------------Navigation---------- */
   for (var i = toggles.length - 1; i >= 0; i--) {
     var toggle = toggles[i];
     toggleHandler(toggle);
@@ -20,8 +26,7 @@
       }
     });
   }
-  const tabsBtn   = document.querySelectorAll(".tabs__nav-btn");
-  const tabsItems = document.querySelectorAll(".tabs__item");
+/*---------------Tabs-------------- */
   
   tabsBtn.forEach(onTabClick);
     
@@ -48,5 +53,4 @@
       }
     });
   }
-
 })();

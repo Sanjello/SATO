@@ -78,5 +78,39 @@ $dark:#222831;
 				}
 			}
 		}	
+		.header__end{
+			position: relative;
+			color:#fff;
+			a{
+				text-decoration: none;
+				font-family: "Raleway";
+				font-size: 20px;
+				line-height: 28px;
+				color:#fff
+			}
+			&:hover ul{
+				display: block;
+			}
+			.header_end__dropdown{
+				width: 120%;
+				display: none;
+				position: absolute;
+				transform: translateX(-35%);
+				text-align: center;
+				width: fit-content;
+				li:first-child{
+					border-bottom: 1px solid rgb(184, 184, 184);
+				}
+				li{
+					width: 120%;
+					padding: 10px 30px;
+					font-size: 14px;
+					line-height: 20px;
+					background: #222831;
+				}
+				
+			}
+
+		}
 	}
 }
