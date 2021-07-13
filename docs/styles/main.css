@@ -357,6 +357,7 @@ section {
   background: #222831;
 }
 .header .header__body .header__end .header_end__dropdown li a {
+  color: #fff;
   font-size: 14px;
   line-height: 20px;
 }
@@ -1498,6 +1499,7 @@ section {
   font-size: large;
   color: #606874;
   line-height: 16px;
+  font-family: "Roboto";
 }
 
 .footer {
