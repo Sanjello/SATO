@@ -749,7 +749,7 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.history .history__text .show-more {
+.history .history__text .show-more .more-text {
   display: block;
 }
 .history .history__text .read-more-btn {

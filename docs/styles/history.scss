@@ -25,7 +25,7 @@ $max-font: 56px;
 	.history__title{
 		color: $yell;
 		font-weight: 700;
-
+	
 		/* Media queries for title*/
 		
 		/* Large desktops and laptops */
@@ -54,6 +54,7 @@ $max-font: 56px;
 		display: grid;
 		margin-top: 8%;
 		align-items: flex-start;
+		
 		/* Large desktops and laptops */
 		@media (min-width: 1200px) {
 			grid-template-columns: 1fr 1fr;
@@ -151,6 +152,7 @@ $max-font: 56px;
 		font-size: 18px;
 		line-height: 21px;	
 		padding: 0% 0;
+		
 		.more-text {
 			display: none;
 		}
@@ -158,9 +160,10 @@ $max-font: 56px;
 			background: linear-gradient(180deg, rgba(255,255,255,1) 61%, rgba(255,255,255,0.0009045854669993414) 99%);
 			-webkit-background-clip: text; 
 			-webkit-text-fill-color: transparent; 
+
 		}
 
-		.show-more{
+		.show-more .more-text{
 			display: block;
 		}
 		.read-more-btn {
@@ -212,5 +215,3 @@ $max-font: 56px;
 		}
 	}
 }
-
-

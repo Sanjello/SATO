@@ -1,6 +1,5 @@
 const readMoreBtn = document.querySelectorAll('.read-more-btn');
-const moreText = document.querySelectorAll('.more-text');
-
+const textPreview = document.querySelectorAll('.text-preview');
 
 for (let i=0; i<readMoreBtn.length; i++){
     readMoreBtn[i].addEventListener('click', e=>{
@@ -12,6 +11,7 @@ for (let i=0; i<readMoreBtn.length; i++){
         else {
             readMoreBtn[i].innerHTML = 'Читати далі...';
             textPreview[i].classList.toggle('text-gradient'); 
-        }    
+        }
     })
+    
 }
