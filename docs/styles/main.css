@@ -321,6 +321,10 @@ section {
   line-height: 20px;
   background: #222831;
 }
+.header .header__body .header__end .header_end__dropdown li a {
+  font-size: 14px;
+  line-height: 20px;
+}
 
 /*------Burger----*/
 /* some SCSS variables */
