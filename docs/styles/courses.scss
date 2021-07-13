@@ -129,6 +129,7 @@ $max-font: 56px;
 		}
 	}
 	.courses__info{
+		display: none;
 		max-width: 1200/1920*100%;
 		margin: 0 auto;
 		text-align: center;
@@ -175,5 +176,8 @@ $max-font: 56px;
 				}
 			}
 		}
+	}
+	.active{
+		display: block;
 	}
 }

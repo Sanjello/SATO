@@ -835,8 +835,8 @@ function createTable(id,array,tab){
     if(course["_id"] !=id){
       list += crateRow(course);
     }
-    $(tab).html(list);
   })
+  $(tab).html(list);
 }
 
 
