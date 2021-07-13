@@ -3,28 +3,36 @@
     display: inline-block;
 }
 
+.footer_creators {
+    margin: 10px auto;
+    bottom: 5px;
+    left: 0%;
+    font-size: large;
+    color: #606874;
+    line-height: 16px;
+}
+
 .footer {
-    background-color: #393E46;
+    background-color: #393e46;
     display: flex;
     flex-direction: row;
     p {
         color: #fff;
-        font-family: 'Roboto';
+        font-family: "Roboto";
     }
-    hr {        
-        background-color:$yell;
+    hr {
+        background-color: $yell;
         height: 1px;
         width: 15%;
         margin: 10px 0 10px 0;
     }
     a {
         color: $yell;
-        &:hover{
+        &:hover {
             color: #fff;
             transition: all 1s;
         }
     }
-    
 }
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -34,7 +42,7 @@
             letter-spacing: 0.07em;
             color: #fff;
             font-size: 15px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
         }
         iframe {
             width: 280px;
@@ -51,7 +59,7 @@
             font-size: 10px;
             letter-spacing: 0.02em;
             .footer__kafedra {
-                margin: 5px 0 40px 0; 
+                margin: 5px 0 40px 0;
                 span {
                     font-size: 10px;
                     color: $yell;
@@ -63,9 +71,8 @@
                     color: $yell;
                 }
             }
-                
         }
-        
+
         .footer__socialmedia {
             padding: 40px;
             .social {
@@ -76,22 +83,22 @@
                     margin-right: 20px;
                 }
             }
+
             img {
                 width: 50px;
             }
-            
         }
     }
 }
 /* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1200px){
+@media (min-width: 992px) and (max-width: 1200px) {
     .footer {
         height: 100%;
         span {
             letter-spacing: 0.07em;
             color: #fff;
             font-size: 15px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
         }
         iframe {
             width: 280px;
@@ -102,14 +109,14 @@
         .footer__map {
             padding: 40px;
         }
-        
+
         .footer__contacts {
             padding: 40px;
             line-height: 21px;
             font-size: 10px;
             letter-spacing: 0.02em;
             .footer__kafedra {
-                margin: 5px 0 40px 0; 
+                margin: 5px 0 40px 0;
                 span {
                     font-size: 10px;
                     color: $yell;
@@ -121,7 +128,6 @@
                     color: $yell;
                 }
             }
-                
         }
         .footer__socialmedia {
             padding: 40px;
@@ -136,20 +142,18 @@
             img {
                 width: 50px;
             }
-            
         }
     }
-
 }
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 992px){
+@media (min-width: 768px) and (max-width: 992px) {
     .footer {
         height: 100%;
         span {
             letter-spacing: 0.07em;
             color: #fff;
             font-size: 15px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
         }
         iframe {
             width: 280px;
@@ -166,7 +170,7 @@
             font-size: 10px;
             letter-spacing: 0.02em;
             .footer__kafedra {
-                margin: 5px 0 40px 0; 
+                margin: 5px 0 40px 0;
                 span {
                     font-size: 10px;
                     color: $yell;
@@ -184,9 +188,8 @@
                     color: $yell;
                 }
             }
-                
         }
-        
+
         .footer__socialmedia {
             padding: 40px;
             .social {
@@ -200,7 +203,6 @@
             img {
                 width: 50px;
             }
-            
         }
     }
 }
@@ -214,7 +216,7 @@
             letter-spacing: 0.07em;
             color: #fff;
             font-size: 15px;
-            font-family: 'Roboto';
+            font-family: "Roboto";
         }
         iframe {
             width: 280px;
@@ -222,7 +224,7 @@
             border: 7px solid #fff;
         }
         .footer__map {
-        //    padding: 2% 0 0 30%;
+            //    padding: 2% 0 0 30%;
             margin: 5% auto;
             span {
                 display: none;
@@ -239,14 +241,12 @@
             display: flex;
             flex-direction: row;
             .footer__kafedra {
-                margin: 5px 20px 40px 0; 
+                margin: 5px 20px 40px 0;
                 span {
                     font-size: 10px;
                     color: $yell;
                 }
                 padding: 3%;
-                
-                
             }
             .contacts__title {
                 display: none;
@@ -261,9 +261,8 @@
                     color: $yell;
                 }
             }
-                
         }
-        
+
         .footer__socialmedia {
             margin: 2% auto;
             display: flex;
@@ -287,7 +286,7 @@
             img {
                 width: 50px;
             }
-            
+
             .socialmedia__title {
                 display: none;
             }

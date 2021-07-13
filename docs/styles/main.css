@@ -93,7 +93,7 @@ section {
   transition: 1s all;
   opacity: 1;
   visibility: visible;
-  background: url(./../images/walking_man.gif) center no-repeat;
+  background: url(./../images/awesome_duck.gif) center no-repeat;
   background-color: #000;
 }
 .preloader .loader {
@@ -1486,8 +1486,17 @@ section {
   display: inline-block;
 }
 
+.footer_creators {
+  margin: 10px auto;
+  bottom: 5px;
+  left: 0%;
+  font-size: large;
+  color: #606874;
+  line-height: 16px;
+}
+
 .footer {
-  background-color: #393E46;
+  background-color: #393e46;
   display: flex;
   flex-direction: row;
 }
