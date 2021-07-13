@@ -25,13 +25,12 @@ $max-font: 56px;
 	.history__title{
 		color: $yell;
 		font-weight: 700;
-		//margin: 0 auto;
+
 		/* Media queries for title*/
 		
 		/* Large desktops and laptops */
 		@media (min-width: 1200px){
 			font-size: $max-font;
-			//padding: 2% 0 0 15%;
 		}
 		/* Landscape tablets and medium desktops */
 		@media (min-width: 992px) and (max-width: 1200px){
@@ -54,6 +53,7 @@ $max-font: 56px;
 	.history__text-container{
 		display: grid;
 		margin-top: 8%;
+		align-items: flex-start;
 		/* Large desktops and laptops */
 		@media (min-width: 1200px) {
 			grid-template-columns: 1fr 1fr;
@@ -151,17 +151,17 @@ $max-font: 56px;
 		font-size: 18px;
 		line-height: 21px;	
 		padding: 0% 0;
-		// overflow: hidden;
 		.more-text {
 			display: none;
-			opacity: 0;
-			
+		}
+		.text-gradient {
+			background: linear-gradient(180deg, rgba(255,255,255,1) 61%, rgba(255,255,255,0.0009045854669993414) 99%);
+			-webkit-background-clip: text; 
+			-webkit-text-fill-color: transparent; 
 		}
 
 		.show-more{
 			display: block;
-			opacity: 1;
-			transition: all 0.5s;
 		}
 		.read-more-btn {
 			background-color: transparent;
