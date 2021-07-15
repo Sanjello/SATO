@@ -1349,6 +1349,7 @@ section {
   padding-bottom: 20px;
   color: #FFD369;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 590px) {
   .robototechnics .robototechnics_head {
