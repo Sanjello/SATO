@@ -34,6 +34,18 @@
             transition: all 1s;
         }
     }
+    .sponsors{
+        h3{
+            color: #fff;
+            font-family: 'roboto';
+            font-weight: 400;
+            font-size: 15px;
+            letter-spacing: 0.07em;
+        }
+        a img{
+            border-radius: 7px;
+        }
+    }
 }
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -75,7 +87,7 @@
         }
 
         .footer__socialmedia {
-            padding: 40px;
+            padding: 40px 0;
             .social {
                 margin: 5px 0 40px 0;
                 i {
@@ -84,9 +96,19 @@
                     margin-right: 20px;
                 }
             }
-
+            .sponsors{
+                text-align: left;
+            }
             img {
                 width: 50px;
+            }
+            h3{
+                margin-top: 20px;
+            }
+            .sponsors img{
+                width: 100%;
+                padding: 0px 10px 20px 0;
+                border-radius: 10px;
             }
         }
     }
@@ -140,8 +162,14 @@
                     margin-right: 20px;
                 }
             }
+
             img {
                 width: 50px;
+            }
+            .sponsors img{
+                width: 100%;
+                padding: 0px 10px 20px 0;
+                border-radius: 10px;
             }
         }
     }
@@ -203,6 +231,12 @@
             }
             img {
                 width: 50px;
+            }
+
+            .sponsors img{
+                width: 100%;
+                padding: 0px 10px 20px 0;
+                border-radius: 10px;
             }
         }
     }
@@ -287,7 +321,17 @@
             img {
                 width: 50px;
             }
-
+            .sponsors{
+                margin: 0 auto;
+                h3{
+                    text-align: center;
+                }
+            }
+            .sponsors img{
+                width: 100%;
+                padding: 0px 10px 20px 0;
+                border-radius: 10px;
+            }
             .socialmedia__title {
                 display: none;
             }
@@ -295,5 +339,6 @@
                 display: none;
             }
         }
+
     }
 }
