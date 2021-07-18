@@ -26,7 +26,8 @@ Highcharts.chart('container', {
         text: ''
     },
     chart: {
-        backgroundColor: '#222831'
+        backgroundColor: '#222831',
+        height: '10%',
     },
     tooltip: { enabled: false },
    
