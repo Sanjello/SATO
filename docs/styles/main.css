@@ -1440,8 +1440,8 @@ section {
   border-radius: 20px;
   background-color: white;
   max-width: 1200px;
-  padding: 5% 10%;
-  margin: 0 auto 5% auto;
+  padding: 0 10% 5% 10%;
+  margin: 0 auto;
 }
 .sport_programming .sport_programming__head {
   font-size: 56px;
@@ -1849,3 +1849,4 @@ section {
     display: none;
   }
 }
+/*------Words cloud----*/
